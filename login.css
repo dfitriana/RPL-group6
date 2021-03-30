@@ -170,7 +170,7 @@ body {
 	border-radius: 3px 0 0 3px;
 }
 .card-login .btn-icon.btn-icon-google:before {
-	background-image: url('../img/google.png');
+	background-image: url(img/google.png);
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
