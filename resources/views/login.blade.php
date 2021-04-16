@@ -49,8 +49,8 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="padding">
                             <h2>Log In</h2><br><br>
-                            <form action="" method="POST">
-
+                            <form action="{{route('postlogin')}}" method="POST">
+                                {{csrf_field()}}
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" name="email" class="form-control" id="email" tabindex="1">
