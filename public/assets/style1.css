@@ -27,7 +27,7 @@ body, html{
 
 #sidebar-wrapper::-webkit-scrollbar {
     width: 8px;
-    background: #222e3c;
+    background: #ffffff;
 }
 
 #sidebar-wrapper::-webkit-scrollbar-thumb {
@@ -371,6 +371,17 @@ body, html{
     box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.05);
 }
 
+.kode #koper{
+    font-size: 14px;
+    color: #007BFF;
+    font-weight: normal;
+}
+
+.card #status{
+    font-size:14px;
+    color: white;
+}
+
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
@@ -469,29 +480,6 @@ font-weight: 400;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
 }
-
-.table h5{
-    font-size: 16px;
-	font-weight:600;
-	color:#585858;
-}
-
-footer.footer {
-    padding: 1rem .875rem;
-    direction: ltr;
-    background: #fff;
-}
-
-footer.footer ul {
-    margin:0px;
-	list-style:none;
-}
-
-.footer ul  li{
- display:inline-block;
- margin:0px 7px;
-}
-
 .text-muted {
     color: #6c757d!important;
 	font-size:14px;
