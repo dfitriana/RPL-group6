@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::view('/admin', 'admin');
 Route::get('/', [LoginController::class, 'loginpage'])->name('login');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');

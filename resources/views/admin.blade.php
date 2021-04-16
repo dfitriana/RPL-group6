@@ -136,12 +136,12 @@
                                     <span class="mr-2 d-none d-lg-inline text-white-600 medium">Habib Taqiyullah</span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" id="drop_prof">
-                                    <img class="img-profile rounded-circle" src="../../assets/img/logo3.png">
+                                    <img class="img-profile rounded-circle" src="{{asset('assets/img/logo3.png')}}">
                                     <div class="adm">
                                         <h5 class="dropdown-header">Habib Taqiyullah</h5>
                                         <h6 class="dropdown-header">Administrator</h6>
                                     </div>
-                                    <button type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</button>
+                                    <a href="{{route('logout')}}" type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</a>
                                 </div>
                             </li>
                         </ul>
