@@ -28,7 +28,7 @@
                 </a>
                 <ul class="navbar-nav align-self-stretch">
                     <li class="sidebar-header">
-                        Habib Taqiyullah
+                        Habib Taqiyullah chan
                     </li>
 
                     <li class="has-sub">
