@@ -66,6 +66,12 @@
                                     @enderror
                                 </div>
                                 <div class="form-group text-right">
+                                    {!! NoCaptcha::renderJs() !!}
+                                    {!! NoCaptcha::display() !!}
+                                    @error('g-recaptcha-response')
+                                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                    @enderror
+                                    <br>
                                     <div class="float-left mt-2">
                                         <a href="#">Forgot Password?</a>
                                     </div>
