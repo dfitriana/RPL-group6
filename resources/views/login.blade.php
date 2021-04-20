@@ -49,17 +49,21 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="padding">
                             <h2>Log In</h2><br><br>
-                            <form action="" method="POST">
-
+                            <form action="{{route('postlogin')}}" method="POST">
+                                {{csrf_field()}}
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" tabindex="1">
-
+                                    <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" tabindex="1">
+                                    @error('email')
+                                    <small class="text-danger">{{ $message }}</small>
+                                    @enderror
                                 </div>
                                 <div class="form-group">
                                     <label class="d-block" for="password">Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" tabindex="2">
-
+                                    <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" tabindex="2">
+                                    @error('password')
+                                    <small class="text-danger">{{$message}}</small>
+                                    @enderror
                                 </div>
                                 <div class="form-group text-right">
                                     <div class="float-left mt-2">
