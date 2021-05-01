@@ -111,7 +111,7 @@ body, html{
 .toggled#sidebar-wrapper {
     width:270px!important;
     height: 100%;
-     left: 0px;
+    left: 0px;
     overflow-y:auto;
     overflow-x:hidden;
     transition: all 0.5s ease;
@@ -398,6 +398,12 @@ font-weight: 400;
 
 #isian{
     border-top: #007BFF solid 5px;
+}
+
+.card-body .alert{
+    background-color: #00BEEB;
+    border-left: #007BFF solid 5px;
+    color: white;
 }
 
 .text-gray-800 {
