@@ -21,3 +21,4 @@ Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogi
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/admin-dashboard', [AdminController::class, 'admin'])->name('admin-home');
 Route::get('/penetapan-periode',[AdminController::class,'periode'])->name('periode');
+Route::get('/plotting-evaluator',[AdminController::class,'plotting'])->name('plotting');

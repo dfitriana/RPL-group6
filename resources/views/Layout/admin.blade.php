@@ -45,7 +45,7 @@
                                                 <ul class="list-unstyled m-0">
                                                     <li><a href="{{route('admin-home')}}">Home</a></li>
                                                     <li><a href="{{route('periode')}}">Penetapan Periode</a></li>
-                                                    <li><a href="">Plotting Evaluator Internal</a></li>
+                                                    <li><a href="{{route('plotting')}}">Plotting Evaluator Internal</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@
                     <!-- Mulai bagian isi SIAPS -->
                     <div class="container-fluid px-lg-4">
                         <div class="main__title">
-                            <img src="img/hello.svg" alt="" />
+                            <img src="{{asset('assets/img/hello.svg')}}" alt="" />
                             <div class="main__greeting">
                                 <h1>Hello!</h1>
                                 <p>Selamat datang, Habib Taqiyullah S. Pd., M. Pd.</p>
