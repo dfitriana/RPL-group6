@@ -18,15 +18,9 @@
                 <div class="mb-3">
                     <strong for="program-studi" class="form-label">Program Studi</strong>
                     <select class="form-control" name="program_studi"">
-                    
-                        <option></option>
-                        <!-- <option>Sistem Informasi (S1)</option>
-                        <option>Pendidikan Matematika (S1)</option>
-                        <option>Matematika (S1)</option>
-                        <option>Statistika Terapan dan Komputer (D3)</option>
-                        <option>Pendidikan Fisika (S1)</option>
-                        <option>Fisika (S1)</option> -->
-                    
+                    @foreach($programData as $items)
+                        <option>{{$items['nama']}}</option>
+                    @endforeach
                     </select>
                 </div>
                 <strong for=" waktu" class="form-label">Waktu Periode Akreditasi</strong>
