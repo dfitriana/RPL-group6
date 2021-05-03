@@ -79,9 +79,8 @@ body, html{
 }
 
 .navbar-nav .has-sub > a.collapsed::after {
-    color:gray;
     font-size: 10px;
-    content: "\f078";
+    content: url(font/fontawesome-free-5.15.3-web/svgs/solid/angle-down.svg);
 }
 .navbar-nav .has-sub > a.collapsed::after {
    color:gray;
@@ -89,17 +88,14 @@ body, html{
 
 .navbar-nav .has-sub > a::after {
     position: absolute;
-    right: 0px;
-    top: 50%;
+    right: 6px;
+    top: 59%;
     height: 30px;
-    width: 30px;
+    width: 10px;
     text-align: center;
-    color:gray;
     display: block;
-    content: "\f077";
-    font-family: 'Font Awesome\ 5 Free';
+    content:url(font/fontawesome-free-5.15.3-web/svgs/solid/angle-up.svg) ;
     font-weight: 900;
-    font-size: 13px;
     line-height: 30px;
     margin-top: -15px;
 }

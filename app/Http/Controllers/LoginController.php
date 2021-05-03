@@ -20,7 +20,7 @@ class LoginController extends Controller
             'g-recaptcha-response' => 'required|captcha',
         ]);
         if (Auth::attempt($request->only('email', 'password'))) {
-            return redirect('/admin');
+            return redirect('/admin-dashboard');
         }
         return redirect('/');
     }
