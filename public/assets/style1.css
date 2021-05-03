@@ -480,3 +480,7 @@ font-weight: 400;
     color: #6c757d!important;
 	font-size:14px;
 }
+.padtanggal{
+    position: fixed;
+    left: 65%;
+}

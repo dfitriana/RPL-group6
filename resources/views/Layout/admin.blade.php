@@ -44,7 +44,7 @@
                                             <div class="submenu-box">
                                                 <ul class="list-unstyled m-0">
                                                     <li><a href="{{route('admin-home')}}">Home</a></li>
-                                                    <li><a href="">Penetapan Periode</a></li>
+                                                    <li><a href="{{route('periode')}}">Penetapan Periode</a></li>
                                                     <li><a href="">Plotting Evaluator Internal</a></li>
                                                 </ul>
                                             </div>

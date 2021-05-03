@@ -20,3 +20,4 @@ Route::get('/', [LoginController::class, 'loginpage'])->name('login');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/admin-dashboard', [AdminController::class, 'admin'])->name('admin-home');
+Route::get('/penetapan-periode',[AdminController::class,'periode'])->name('periode');
