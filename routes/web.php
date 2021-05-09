@@ -26,3 +26,6 @@ Route::get('/plotting-evaluator',[AdminController::class,'plotting'])->name('plo
 Route::get('/operator-dashboard',[OperatorController::class, 'operator'])->name('operator-home');
 Route::get('/operator-profilPengusul',[OperatorController::class, 'profilpengusul'])->name('profil-pengusul');
 Route::get('/operator-editProfilPengusul',[OperatorController::class, 'editprofilpengusul'])->name('edit-profil-pengusul');
+Route::get('/operator-kerjasamaPendidikan',[OperatorController::class, 'kerjasamapendidikan'])->name('kerjasama-pendidikan');
+Route::get('/operator-kualitasInputMahasiswa',[OperatorController::class, 'kualitasinputmahasiswa'])->name('kualitas-input-mahasiswa');
+Route::get('/operator-sdm-ewmpdtps',[OperatorController::class, 'sdmewmpdtps'])->name('sdm-ewmp-dtps');
