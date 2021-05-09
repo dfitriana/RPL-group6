@@ -24,3 +24,5 @@ Route::get('/admin-dashboard', [AdminController::class, 'admin'])->name('admin-h
 Route::get('/penetapan-periode',[AdminController::class,'periode'])->name('periode');
 Route::get('/plotting-evaluator',[AdminController::class,'plotting'])->name('plotting');
 Route::get('/operator-dashboard',[OperatorController::class, 'operator'])->name('operator-home');
+Route::get('/operator-profilPengusul',[OperatorController::class, 'profilpengusul'])->name('profil-pengusul');
+Route::get('/operator-editProfilPengusul',[OperatorController::class, 'editprofilpengusul'])->name('edit-profil-pengusul');
