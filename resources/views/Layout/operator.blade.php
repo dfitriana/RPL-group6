@@ -72,9 +72,9 @@
                                         <div class="col-lg-12 px-2">
                                             <div class="submenu-box"> 
                                                 <ul class="list-unstyled m-0">
-                                                    <li><a href="">Kerjasama</a></li>
-                                                    <li><a href="">Mahasiswa</a></li>
-                                                    <li><a href="">SDM</a></li>
+                                                    <li><a href="{{route('kerjasama-pendidikan')}}">Kerjasama</a></li>
+                                                    <li><a href="{{route('kualitas-input-mahasiswa')}}">Mahasiswa</a></li>
+                                                    <li><a href="{{route('sdm-ewmp-dtps')}}">SDM</a></li>
                                                     <li><a href="">Keuangan Sarpras</a></li>
                                                     <li><a href="">Pendidikan</a></li>
                                                     <li><a href="">Penelitian</a></li>
