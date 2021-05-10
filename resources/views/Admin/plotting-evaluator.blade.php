@@ -9,7 +9,8 @@
                 </div>
             </div>
 
-            <form action="">
+            <form action="{{route('savedata')}}" method="POST">
+                {{csrf_field()}}
                 <div class="mb-3">
                     <strong for="kode-periode" class="form-label">Kode Periode</strong>
 
@@ -56,7 +57,7 @@
                     </select>
                 </div>
 
-                <button type=" submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
