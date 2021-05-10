@@ -45,6 +45,19 @@ class AdminController extends Controller
         return view('admin.penetapan-periode', compact('users', 'prodi', 'kode_periode'));
     }
 
+    public function setperiode(Request $request, $kode_periode)
+    {
+        $idperiode = $kode_periode;
+
+        $periode = new Periode;
+        $periode->kode_periode = $idperiode;
+        $periode->program_studi = $request->program_studi;
+        $periode->tglawal = $request->tglawal;
+        $periode->tglakhir = $request->tglakhir;
+        $periode->save();
+        return redirect()->route('plotting', $idperiode);
+    }
+
     public function plotting()
     {
         $users = User::all();
