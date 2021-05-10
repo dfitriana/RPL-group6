@@ -68,4 +68,9 @@ class AdminController extends Controller
 
         return view('admin.plotting-evaluator', compact('users', 'periodes'), ['idperiode' => $idperiode]);
     }
+
+    public function savedata()
+    {
+        return redirect('/admin-dashboard')->with('info', 'Data berhasil ditambahkan!');
+    }
 }
