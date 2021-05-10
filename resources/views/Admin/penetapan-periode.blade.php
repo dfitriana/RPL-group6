@@ -13,7 +13,7 @@
                 {{csrf_field()}}
                 <div class="mb-3">
                     <strong for="kode-periode" class="form-label">Kode Periode</strong>
-                    <input class="form-control" name="kode_periode" type="text" value="" disabled>
+                    <input class="form-control" name="kode_periode" type="text" value="{{$kode_periode}}" disabled>
                 </div>
                 <div class="mb-3">
                     <strong for="program-studi" class="form-label">Program Studi</strong>
