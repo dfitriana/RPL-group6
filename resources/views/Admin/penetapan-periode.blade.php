@@ -10,7 +10,7 @@
                     <h3 class="card-title">Setting Periode Akreditasi</h3><br>
                 </div>
             </div>
-            <form action="" method="POST">
+            <form action="{{route('setperiode',$kode_periode)}}" method="POST">
                 {{csrf_field()}}
                 <div class="mb-3">
                     <strong for="kode-periode" class="form-label">Kode Periode</strong>
