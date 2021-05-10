@@ -9,17 +9,17 @@
                 </div>
             </div>
 
-            <form>
+            <form action="">
                 <div class="mb-3">
                     <strong for="kode-periode" class="form-label">Kode Periode</strong>
 
-                    <input class="form-control" name="kode-periode" type="text" placeholder="" disabled>
+                    <input class="form-control" name="kode-periode" type="text" value="{{$idperiode}}" disabled>
 
                 </div>
 
                 <div class="mb-3">
                     <strong for="prodi" class="form-label">Progam Studi</strong>
-                    <input class="form-control" name="prodi" type="text" placeholder="" disabled>
+                    <input class="form-control" name="prodi" type="text" value="{{$periodes->program_studi}}" disabled>
 
                 </div>
 
