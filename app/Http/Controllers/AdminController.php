@@ -15,9 +15,10 @@ class AdminController extends Controller
 {
     public function admin()
     {
+        $periodes = Periode::all();
         $users = User::all();
 
-        return view('Admin.dashboard', compact('users'));
+        return view('Admin.dashboard', compact('users', 'periodes'));
     }
 
     public function periode()
@@ -58,9 +59,13 @@ class AdminController extends Controller
         return redirect()->route('plotting', $idperiode);
     }
 
-    public function plotting()
+    public function plotting($idperiode)
     {
         $users = User::all();
-        return view('admin.plotting-evaluator', compact('users'));
+        // $periodes = periode::latest('upload_time')->first;
+        $periodes = periode::find($idperiode);
+        // periode::find($kode_periode);
+
+        return view('admin.plotting-evaluator', compact('users', 'periodes'), ['idperiode' => $idperiode]);
     }
 }
