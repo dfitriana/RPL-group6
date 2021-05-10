@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Helpers\Helper;
 use App\Models\User;
 use App\Models\Periode;
+use App\Models\Prodi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
+use PhpParser\Node\Stmt\Foreach_;
 
 class AdminController extends Controller
 {
@@ -22,9 +24,25 @@ class AdminController extends Controller
     {
         $kode_periode = Helper::IDGenerator(new Periode, 'kode_periode', 7, 'PKK');
         $users = User::all();
+        $prodi = Prodi::all();
         $program = Http::withBasicAuth('webmipa', 'k4cangg0r3ngr3ny4h')->get('http://services.unnes.ac.id/api/listprodi/4');
         $programData = $program['data'];
-        return view('admin.penetapan-periode', compact('users', 'programData', 'kode_periode'));
+        foreach ($programData as $data) {
+            DB::table('prodis')
+                ->updateOrInsert(
+                    ['kode' => $data['kode']],
+                    ['nama_prodi' => $data['nama']]
+                    // ['jenjang' => $data['jenjang']],
+                    // ['konsentrasi' => $data['konsentrasi']],
+                    // ['strjjg' => $data['strjjg']],
+                    // ['no_sk' => $data['no_sk']],
+                    // ['akreditasi' => $data['akreditasi']],
+                    // ['tgl_sk' => $data['tgl_sk']]
+
+                );
+        }
+
+        return view('admin.penetapan-periode', compact('users', 'prodi', 'kode_periode'));
     }
 
     public function plotting()
