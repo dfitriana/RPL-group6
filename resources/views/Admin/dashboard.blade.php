@@ -83,15 +83,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($periodes as $item)
                             <tr>
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1842</h4>
+                                            <h4 class="m-b-0 font-16" id="koper">{{$item->kode_periode}}</h4>
                                         </div>
                                     </div>
                                 </td>
-                                <td>Sistem Informasi (S1)</td>
+                                <td>{{$item->program_studi}}</td>
                                 <td></td>
                                 <td>
                                     <span class="badge badge-success" id="status">Shipped</span>
@@ -100,227 +101,12 @@
                                 <td>
                                     <!-- isian data -->
                                 </td>
+
                                 <td></td>
+                                @endforeach
                             </tr>
 
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1843</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Pendidikan Matematika (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1844</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Matematika (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
 
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1845</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Statistika Terapan dan Komputasi (D3)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1846</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Pendidikan Fisika (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1847</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Fisika (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1848</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Pendidikan Kimia (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1849</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Farmasi (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1850</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Kimia (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1851</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Pendidikan Biologi (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1852</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Biologi (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="kode">
-                                            <h4 class="m-b-0 font-16" id="koper">OR1853</h4>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Ilmu Lingkungan (S1)</td>
-                                <td></td>
-                                <td>
-                                    <span class="badge badge-warning" id="status">Pending</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <!-- isian data -->
-                                </td>
-                                <td></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
