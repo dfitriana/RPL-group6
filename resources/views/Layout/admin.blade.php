@@ -191,6 +191,16 @@
     </script>
     @endif
 
+    @if(Session::has('info'))
+    <script>
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true
+        }
+        toastr.info("{!! Session::get('info') !!}");
+    </script>
+    @endif
+
 
 </body>
 
