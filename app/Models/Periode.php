@@ -9,4 +9,6 @@ class Periode extends Model
 {
     use HasFactory;
     protected $table = 'Periodes';
+    protected $primaryKey = "kode_periode";
+    public $incrementing = false;
 }
