@@ -25,6 +25,7 @@ Route::get('/penetapan-periode', [AdminController::class, 'periode'])->name('per
 Route::get('/plotting-evaluator', [AdminController::class, 'plotting'])->name('plotting');
 Route::post('/penetapan-periodes/{kode_periode}', [AdminController::class, 'setperiode'])->name('setperiode');
 Route::get('/plotting-evaluator/{idperiode?}', [AdminController::class, 'plotting'])->name('plotting');
+Route::post('/plotting-evaluator-save', [AdminController::class, 'savedata'])->name('savedata');
 Route::get('/operator-dashboard', [OperatorController::class, 'operator'])->name('operator-home');
 Route::get('/operator-profilPengusul', [OperatorController::class, 'profilpengusul'])->name('profil-pengusul');
 Route::get('/operator-editProfilPengusul', [OperatorController::class, 'editprofilpengusul'])->name('edit-profil-pengusul');
