@@ -58,12 +58,9 @@
                                                 <tr>
                                                     <th scope="col">Tahun Akademik</th>
                                                     <th scope="col">Daya Tampung</th>
-                                                    <th scope="col">Jumlah Calon Mahasiswa</th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">Jumlah Mahasiswa Baru</th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">Jumlah Mahasiswa Aktif</th>
-                                                    <th scope="col"></th>
+                                                    <th scope="col" colspan="2">Jumlah Calon Mahasiswa</th>
+                                                    <th scope="col" colspan="2">Jumlah Mahasiswa Baru</th>
+                                                    <th scope="col" colspan="2">Jumlah Mahasiswa Aktif</th>
                                                 </tr>
                                                 <tr>
                                                     <th scope="col"></th>
@@ -128,8 +125,7 @@
                                                     <td>0</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Jumlah</th>
-                                                    <td></td>
+                                                    <th scope="row" colspan="2">Jumlah</th>
                                                     <td>2137</td>
                                                     <td>99</td>
                                                     <td>88</td>
