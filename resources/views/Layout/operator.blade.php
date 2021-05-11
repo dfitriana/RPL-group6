@@ -6,14 +6,13 @@
     <title>Home - Operator | SIAPS FMIPA</title>
 
     <!-- Bootstrap Css -->
-    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('assets/css/all.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/style5.css')}}">
+
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/toastr.min.css')}}">
 
     <!-- Hoja de estilos -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
-    <!-- integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{{asset('assets/style5.css')}}">
+    <link rel="stylesheet" href="{{('assets/font/fontawesome-free-5.15.3-web/css/all.css')}}">
     <link rel="stylesheet" href="font/font/flaticon.css">
 
     <!-- Google fonts -->
@@ -160,19 +159,40 @@
 
     
   </div>
-  <!-- Fin wrapper -->
+    <!-- Fin wrapper -->
 
-  <!-- Bootstrap y JQuery -->
-  <script src="assets/js/jquery-3.5.1.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap y JQuery -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/js/toastr.min.js')}}"></script>
 
-  <!-- Abrir / cerrar menu -->
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#content-wrapper").toggleClass("toggled");
-    });
-  </script>
+    <!-- Abrir / cerrar menu -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#content-wrapper").toggleClass("toggled");
+        });
+    </script>
+    @if(Session::has('message'))
+    <script>
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true
+        }
+        toastr.success("{!! Session::get('message') !!}");
+    </script>
+    @endif
+
+    @if(Session::has('info'))
+    <script>
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true
+        }
+        toastr.info("{!! Session::get('info') !!}");
+    </script>
+    @endif
 
 </body>
 
