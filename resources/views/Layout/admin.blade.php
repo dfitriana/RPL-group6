@@ -33,12 +33,12 @@
             </div>
             <div class="menu list-group-flush">
                 <ul class="navbar-nav align-self-stretch" id="sidebar">
-                    @foreach($users as $items)
+
                     <li class="sidebar-header">
                         <img src="{{asset('assets/img/logo3.png')}}" class="rounded-circle text-center" width="50px" style="margin-right: 15px;">
-                        <label class="user">{{$items->name}}</label>
+                        <label class="user">{{$users->name}}</label>
                     </li>
-                    @endforeach
+
 
                     <li class="has-sub">
                         <a class="nav-link collapsed text-left" href="#collapseExample2" role="button" data-toggle="collapse">
@@ -132,17 +132,17 @@
                         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Habib Taqiyullah
+                                    {{$users->name}}
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <br>
                                     <div class="text-center">
                                         <img class="img-profile rounded-circle text-center" src="{{asset('assets/img/logo3.png')}}" width="50px">
                                     </div>
-                                    @foreach($users as $item)
-                                    <h5 class="dropdown-header text-center">Habib Taqiyullah</h5>
-                                    <h6 class="dropdown-header text-center" style="font-weight: bold;">{{$item->level}}</h6>
-                                    @endforeach
+
+                                    <h5 class="dropdown-header text-center">{{$users->name}}</h5>
+                                    <h6 class="dropdown-header text-center" style="font-weight: bold;">{{$users->level}}</h6>
+
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <a href="{{route('logout')}}" type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</a>
