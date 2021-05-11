@@ -1,8 +1,8 @@
 @extends('layout.evaluator')
+@extends('layout.navbar')
 @section('content')
 
-
-        <div id="content" class="container-fluid p-6">
+        <!-- <div id="content" class="container-fluid p-6"> -->
             <br>
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                 <strong>Perhatian!</strong> Anda mendapatkan tugas sebagai Evaluator Akreditasi Program Studi di Program Studi Sistem Informasi
@@ -66,5 +66,5 @@
                     
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 @endsection
