@@ -1,4 +1,5 @@
 @extends('layout.operator')
+@extends('layout.navbar')
 @section('content')
 
         <div id="content" class="container-fluid p-6">
