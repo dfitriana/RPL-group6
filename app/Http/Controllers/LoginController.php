@@ -20,9 +20,15 @@ class LoginController extends Controller
             'g-recaptcha-response' => 'required|captcha',
         ]);
         if (Auth::attempt($request->only('email', 'password'))) {
-            return redirect('/admin-dashboard');
+            $user = Auth::user();
+            if ($user->level == 'Administrator') {
+                return redirect('/admin-dashboard')->with('message', 'Login Berhasil!');
+            } elseif ($user->level == 'Operator') {
+                return redirect('/operator-dashboard')->with('message', 'Login Berhasil!');
+            }
+            return redirect('/')->with('warning', 'Login Gagal!');
         }
-        return redirect('/');
+        return redirect('/')->with('warning', 'Login Gagal!');
     }
 
     public function logout()
