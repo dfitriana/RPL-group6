@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Periode;
 use App\Models\Prodi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use PhpParser\Node\Stmt\Foreach_;
@@ -16,7 +17,7 @@ class AdminController extends Controller
     public function admin()
     {
         $periodes = Periode::all();
-        $users = User::all();
+        $users = Auth::user();
 
         return view('Admin.dashboard', compact('users', 'periodes'));
     }
@@ -24,7 +25,7 @@ class AdminController extends Controller
     public function periode()
     {
         $kode_periode = Helper::IDGenerator(new Periode, 'kode_periode', 7, 'PKK');
-        $users = User::all();
+        $users = Auth::user();
         $prodi = Prodi::all();
         $program = Http::withBasicAuth('webmipa', 'k4cangg0r3ngr3ny4h')->get('http://services.unnes.ac.id/api/listprodi/4');
         $programData = $program['data'];
@@ -61,7 +62,7 @@ class AdminController extends Controller
 
     public function plotting($idperiode)
     {
-        $users = User::all();
+        $users = Auth::user();
         // $periodes = periode::latest('upload_time')->first;
         $periodes = periode::find($idperiode);
         // periode::find($kode_periode);
