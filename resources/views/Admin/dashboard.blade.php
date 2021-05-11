@@ -5,7 +5,7 @@
     <img src="{{asset('assets/img/hello.svg')}}" alt="" />
     <div class="main__greeting">
         <h1>Hello!</h1>
-        <p>Selamat datang, Habib Taqiyullah S. Pd., M. Pd.</p>
+        <p>Selamat datang, {{$users->name}} S. Pd., M. Pd.</p>
     </div>
 </div>
 @endsection
