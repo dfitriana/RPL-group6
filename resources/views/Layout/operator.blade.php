@@ -146,7 +146,7 @@
                                 <h6 class="dropdown-header text-center" style="font-weight: bold;">Operator</h6>
                                 <div class="dropdown-divider"></div>
                                 <div class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</button>
+                                <a href="{{route('logout')}}" type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</a>
                                 </div>
                                 
                             </div>
