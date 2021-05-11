@@ -1,4 +1,5 @@
 @extends('layout.admin')
+@extends('layout.navbar')
 @section('title','Penetapan Periode | SIAPS FMIPA')
 @section('content')
 

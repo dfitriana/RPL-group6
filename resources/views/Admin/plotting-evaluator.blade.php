@@ -1,4 +1,5 @@
 @extends('layout.admin')
+@extends('layout.navbar')
 @section('content')
 <div class="col-md-12 mt-4">
     <div class="card">

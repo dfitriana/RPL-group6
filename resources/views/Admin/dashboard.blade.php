@@ -1,4 +1,5 @@
 @extends('layout.admin')
+@extends('layout.navbar')
 @section('title','Home | SIAPS FMIPA')
 @section('sapaan')
 <div class="main__title">
