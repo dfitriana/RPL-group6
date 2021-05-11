@@ -17,7 +17,7 @@ class LoginController extends Controller
         $validasi = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
-            'g-recaptcha-response' => 'required|captcha',
+            //'g-recaptcha-response' => 'required|captcha',
         ]);
         if (Auth::attempt($request->only('email', 'password'))) {
             $user = Auth::user();
@@ -25,6 +25,8 @@ class LoginController extends Controller
                 return redirect('/admin-dashboard')->with('message', 'Login Berhasil!');
             } elseif ($user->level == 'Operator') {
                 return redirect('/operator-dashboard')->with('message', 'Login Berhasil!');
+            } elseif ($user->level == 'Evaluator') {
+                return redirect('/evaluator-dashboard')->with('message', 'Login Berhasil!');
             }
             return redirect('/')->with('warning', 'Login Gagal!');
         }
