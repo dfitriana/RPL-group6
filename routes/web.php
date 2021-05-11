@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OperatorController;
+use App\Http\Controllers\EvaluatorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,4 @@ Route::get('/operator-editProfilPengusul', [OperatorController::class, 'editprof
 Route::get('/operator-kerjasamaPendidikan', [OperatorController::class, 'kerjasamapendidikan'])->name('kerjasama-pendidikan');
 Route::get('/operator-kualitasInputMahasiswa', [OperatorController::class, 'kualitasinputmahasiswa'])->name('kualitas-input-mahasiswa');
 Route::get('/operator-sdm-ewmpdtps', [OperatorController::class, 'sdmewmpdtps'])->name('sdm-ewmp-dtps');
+Route::get('/evaluator-dashboard', [EvaluatorController::class, 'evaluator'])->name('evaluator-home');
