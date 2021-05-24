@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\Helper;
+use App\Models\Evaluator;
 use App\Models\User;
 use App\Models\Periode;
 use App\Models\Prodi;
@@ -33,13 +34,13 @@ class AdminController extends Controller
             DB::table('prodis')
                 ->updateOrInsert(
                     ['kode' => $data['kode']],
-                    ['nama_prodi' => $data['nama']]
-                    // ['jenjang' => $data['jenjang']],
-                    // ['konsentrasi' => $data['konsentrasi']],
-                    // ['strjjg' => $data['strjjg']],
-                    // ['no_sk' => $data['no_sk']],
-                    // ['akreditasi' => $data['akreditasi']],
-                    // ['tgl_sk' => $data['tgl_sk']]
+                    ['nama_prodi' => $data['nama']],
+                    ['jenjang' => $data['jenjang']],
+                    ['konsentrasi' => $data['konsentrasi']],
+                    ['strjjg' => $data['strjjg']],
+                    ['no_sk' => $data['no_sk']],
+                    ['akreditasi' => $data['akreditasi']],
+                    ['tgl_sk' => $data['tgl_sk']]
 
                 );
         }
@@ -54,8 +55,8 @@ class AdminController extends Controller
         $periode = new Periode;
         $periode->kode_periode = $idperiode;
         $periode->program_studi = $request->program_studi;
-        $periode->tglawal = $request->tglawal;
-        $periode->tglakhir = $request->tglakhir;
+        $periode->tgl_awal = $request->tglawal;
+        $periode->tgl_akhir = $request->tglakhir;
         $periode->save();
         return redirect()->route('plotting', $idperiode);
     }
@@ -63,11 +64,27 @@ class AdminController extends Controller
     public function plotting($idperiode)
     {
         $users = Auth::user();
+        $evaluator = Evaluator::all();
+        $evaluatorData = Http::withBasicAuth('webmipa', 'k4cangg0r3ngr3ny4h')->get('http://services.unnes.ac.id/api/listpejabatsimpeg/2020-12-18/111/4')->json();
+        foreach($evaluatorData as $data){
+            DB::table('evaluators')
+            ->updateOrInsert(
+                ['nip'=>$data['nip']],
+                ['nama'=>$data['nama']],
+                ['email'=>$data['email']],
+                ['jabatan_id'=>$data['jabatan_id']],
+                ['kode_unit'=>$data['kode_unit']],
+                ['prodi_doskar'=>$data['prodi_doskar']],
+                ['mail_unnes'=>$data['mail_unnes']],
+                ['bidang_ilmu'=>$data['bidang_ilmu']],
+                ['prodi_jabatan'=>$data['prodi_jabatan']]
+            );
+        }
         // $periodes = periode::latest('upload_time')->first;
         $periodes = periode::find($idperiode);
         // periode::find($kode_periode);
 
-        return view('admin.plotting-evaluator', compact('users', 'periodes'), ['idperiode' => $idperiode]);
+        return view('admin.plotting-evaluator', compact('users', 'periodes', 'evaluator'), ['idperiode' => $idperiode]);
     }
 
     public function savedata()
