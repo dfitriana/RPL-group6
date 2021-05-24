@@ -28,33 +28,27 @@
                 <div class="mb-3">
                     <strong for="eva-enter-1" class="form-label">Evaluator Internal 1</strong>
                     <select class="form-control" name="eva-enter-1">
-                        <option>Prof. Dr. St. Budi Waluya, M. Si.</option>
-                        <option>Prof. Dr. Bambang Setiobudi, M. Kom.</option>
-                        <option>Prof. Asep Sunandar, M. Cs.</option>
-                        <option>Habib Taqiyullah</option>
-                        <option>Ir. Aji Wijaya, M. Si.</option>
+                        @foreach($evaluator as $eva)
+                        <option>{{$eva->nama}}</option>
+                        @endforeach
                     </select>
                 </div>
 
                 <div class="mb-3">
                     <strong for="eva-enter-1" class="form-label">Evaluator Internal 1</strong>
                     <select class="form-control" name="eva-enter-1">
-                        <option>Prof. Dr. Putut Marwoto, M. Si.</option>
-                        <option>Prof. Dr. Rozak Maulana, M. Kom.</option>
-                        <option>Putri Susilawati, Ph. D.</option>
-                        <option>Habib Taqiyullah</option>
-                        <option>Ahmad Subarjo, M. Kom.</option>
+                        @foreach($evaluator as $eva)
+                        <option>{{$eva->nama}}</option>
+                        @endforeach
                     </select>
                 </div>
 
                 <div class="mb-3">
                     <strong for="eva-enter-1" class="form-label">Evaluator Internal 1</strong>
                     <select class="form-control" name="eva-enter-1">
-                        <option>Prof. Dr. SUTIKNO, M. T.</option>
-                        <option>Habib Taqiyullah</option>
-                        <option>Rieka Safitri M. Kom., Ph. D.</option>
-                        <option>Dr. Yunita, M. Cs.</option>
-                        <option>Prof. Dr. Jajang Nur Hadi, M. Kom.</option>
+                        @foreach($evaluator as $eva)
+                        <option>{{$eva->nama}}</option>
+                        @endforeach
                     </select>
                 </div>
 
