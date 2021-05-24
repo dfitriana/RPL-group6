@@ -20,7 +20,6 @@ class CreatePeriodesTable extends Migration
             $table->date('tgl_akhir');
             $table->date('updated_at');
             $table->date('created_at');
-            $table->string('evaluator', 50);
 
         });
     }
