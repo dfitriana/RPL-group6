@@ -14,14 +14,16 @@ class CreateProdisTable extends Migration
     public function up()
     {
         Schema::create('prodis', function (Blueprint $table) {
-            $table->varchar('kode',50);
-            $table->varchar('nama_prodi',50);
-            $table->integer('jenjang');
-            $table->varchar('konsentrasi',50);
-            $table->varchar('strjjg',5);
-            $table->varchar('no_sk',50);
-            $table->varchar('akreditasi',5);
-            $table->date('tgl_sk');
+            $table->id('kode');
+            $table->string('nama_prodi', 50);
+            $table->integer('jenjang')->nullable();
+            $table->string('konsentrasi', 50)->nullable();
+            $table->string('strjjg', 5)->nullable();
+            $table->string('no_sk', 50)->nullable();
+            $table->string('akreditasi', 5)->nullable();
+            $table->date('tgl_sk')->nullable();
+            $table->date('updated_at');
+            $table->date('created_at');
         });
     }
 
