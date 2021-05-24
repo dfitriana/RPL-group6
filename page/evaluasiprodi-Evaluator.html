@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Evaluasi Program Studi | SIAPS FMIPA</title>
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Hoja de estilos -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="font/font/flaticon.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="border-right" style="background-color: #007BFF;">
+            <div class="logo">
+                <h4 class="font-weight-bold mb-0">SIAPS FMIPA</h4>
+            </div>
+            <div class="menu list-group-flush">
+                <ul class="navbar-nav align-self-stretch" id="sidebar">
+                    <li class="sidebar-header">
+                        <img src="assets/img/habib.png" class="rounded-circle text-center" width="50px" style="margin-right: 15px;">
+                        <label class="user">Habib Taqiyullah</label>
+                    </li>
+
+                    <li class="has-sub"> 
+                        <a class="nav-link collapsed text-left" href="#collapseExample2" role="button" data-toggle="collapse" >
+                            <i class="flaticon-user ion-md-apps lead mr-2" style="color: white;"></i>Dashboard
+                        </a>
+                        <div class="collapse menu mega-dropdown" id="collapseExample2">
+                            <div class="dropmenu" aria-labelledby="navbarDropdown">
+                                <div class="container-fluid ">
+                                    <div class="row">
+                                        <div class="col-lg-12 px-2">
+                                            <div class="submenu-box"> 
+                                                <ul class="list-unstyled m-0">
+                                                    <li><a href="">Home</a></li>
+                                                    <li><a href="">Penugasan</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- DIMULAI DARI SINI YA -->
+                    <li class="has-sub"> 
+                        <a class="nav-link collapsed text-left" href="#collapseExample3" role="button" data-toggle="collapse" >
+                            <i class="flaticon-user ion-md-calendar lead mr-2" style="color: white;"></i>Data Akreditasi
+                        </a>
+                        <div class="collapse menu mega-dropdown" id="collapseExample3">
+                            <div class="dropmenu" aria-labelledby="navbarDropdown">
+                                <div class="container-fluid ">
+                                    <div class="row">
+                                        <div class="col-lg-12 px-2">
+                                            <div class="submenu-box"> 
+                                                <ul class="list-unstyled m-0">
+                                                    <li><a href="">Evaluasi Program Studi</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="has-sub"> 
+                        <a class="nav-link collapsed text-left" href="#collapseExample4" role="button" data-toggle="collapse" >
+                            <i class="flaticon-user ion-md-settings lead mr-2" style="color: white;"></i>   Manajemen
+                        </a>
+                        <div class="collapse menu mega-dropdown" id="collapseExample4">
+                            <div class="dropmenu" aria-labelledby="navbarDropdown">
+                                <div class="container-fluid ">
+                                    <div class="row">
+                                        <div class="col-lg-12 px-2">
+                                            <div class="submenu-box"> 
+                                                <ul class="list-unstyled m-0">
+                                                    <li><a href="">Prediksi Hasil Akreditasi</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Fin sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="w-100 bg-light-blue">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+                    <!-- <button class="btn btn-primary text-primary" id="menu-toggle">Menu</button> -->
+                    <div type="button"  id="menu-toggle" class="nav-icon1 hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Habib Taqiyullah
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <br>
+                                <div class="text-center">
+                                    <img class="img-profile rounded-circle text-center" src="assets/img/habib.png" width="50px">
+                                </div>
+                                <h5 class="dropdown-header text-center">Habib Taqiyullah</h5>
+                                <h6 class="dropdown-header text-center" style="font-weight: bold;">Evaluator</h6>
+                                <div class="dropdown-divider"></div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" class="container-fluid p-6">
+            <div class="container-fluid px-lg-4">
+
+                <div class="row">
+                    <div class="col-md-12 mt-lg-4 mt-4">
+                        <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                            <h1 class="h3 mb-0 text-gray-800">Evaluasi Program Studi</h1>
+                        </div>
+                        <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                            <p style="color: rgb(145, 145, 145);">Preview</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-1">
+                        <div class="card">
+                            <div class="card-body" id="isian">
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Evaluasi Program Studi</h4>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <!-- <form>
+                                    <div class="mb-3">
+                                        <strong for="eva-enter-1" class="form-label">Kondisi Eksternal</strong>
+                                        <div>
+                                            <label>Konsistensi dengan hasil analisis SWOT dan/atau analisis lain serta rencana pengembangan ke depan.</label>
+                                            <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline1">1</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline2">2</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline3">3</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline4" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline4">4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+
+                                <!-- <form>
+                                    <div class="mb-3">
+                                        <strong for="eva-enter-2" class="form-label">Profil Unit Pengelola Program Studi</strong>
+                                        <div>
+                                            <label>Keserbacakupan informasi dalam profil dan konsistensi antara profil dengan data dan informasi yang disampaikan pada masing-masing kriteria, serta menunjukan iklim yang kondusif untuk pengembangan dan reputasi sebahai rujukan di bidang keilmuannya.</label>
+                                            <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                <input type="radio" id="customRadioInline5" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline5">1</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline6" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline6">2</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline7" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline7">3</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline8" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline8">4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+
+                                <!-- <form>
+                                    <div class="mb-3">
+                                        <strong for="eva-enter-2" class="form-label">Visi, Misi, Tujuan dan Strategi Indikator Kinerja Utama</strong>
+                                        <div>
+                                            <label>Keserbacakupan informasi dalam profil dan konsistensi antara profil dengan data dan informasi yang disampaikan pada masing-masing kriteria, serta menunjukan iklim yang kondusif untuk pengembangan dan reputasi sebahai rujukan di bidang keilmuannya.</label>
+                                            <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                <input type="radio" id="customRadioInline9" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline9">1</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline10" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline10">2</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline11" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline11">3</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline12" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline12">4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+
+                                <!-- <form>
+                                    <div class="mb-3">
+                                        <strong for="eva-enter-3" class="form-label">Kriteria Visi, Misi, Tujuan dan Strategi Indikator Kinerja Utama</strong>
+                                        <div>
+                                            <label>Kesesuaian visi, misi, tujuan, dan strategi (VMTS) unit pengelola program studi (UPPS) terhadap VMTS perguruan tinggi (PT) dan visi keilmuan program studi (PS).</label>
+                                            <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                <input type="radio" id="customRadioInline13" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline13">1</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline14" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline14">2</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline15" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline15">3</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline16" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline16">4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+
+                                    <!-- <form>
+                                        <div>
+                                            <label>Mekanisme dan keterlibatan pemangku kepentingan dalam penyusunan VMTS UPPS.</label>
+                                            <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                <input type="radio" id="customRadioInline17" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline17">1</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline18" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline18">2</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline19" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline19">3</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline20" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline20">4</label>
+                                            </div>
+                                        </div>
+                                    </form> -->
+
+                                    <!-- <form>
+                                        <div>
+                                            <label>Strategi pencapaian tujuan disusun berdasarkan analisisyang sistematis.</label>
+                                            <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                <input type="radio" id="customRadioInline21" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline21">1</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline22" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline22">2</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline23" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline23">3</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline24" name="customRadioInline" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline24">4</label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </form> -->
+
+                                    <!-- <form>
+                                        <div class="mb-3">
+                                            <strong for="eva-enter-7" class="form-label">Tata Pamong, Tata Kelola, dan Kerjasama</strong>
+                                            <div>
+                                                <label>Kelengkapan struktur organisasi dan keefektidan penyelenggaraan organisasi</label>
+                                                <div class="custom-control custom-radio custom-control-inline ml-2">
+                                                    <input type="radio" id="customRadioInline25" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline25">1</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline26" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline26">2</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline27" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline27">3</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline28" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline28">4</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form> -->
+
+                                    <!-- <form class="was-validated">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation1">1</label>
+                                            <div class="invalid-feedback">Berikan penilaian anda terhadap program studi terkait.</div>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline mb-3">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation2">2</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline mb-3">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation3">3</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline mb-3">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation4">4</label>
+                                        </div>
+                                    </form> -->
+
+                                    <form class="was-validated">
+                                        <div class="mb-3">
+                                            <strong for="eva-enter-1" class="form-label">Kondisi Eksternal</strong>
+                                            <div class="was-validated">
+                                                <label>Konsistensi dengan hasil analisis SWOT dan/atau analisis lain serta rencana pengembangan ke depan.</label>
+                                                    
+                                                <br>
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation1">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation2">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation3">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation4">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <strong for="eva-enter-2" class="form-label">Profil Unit Pengelola Program Studi</strong>
+                                            <div>
+                                                <label>Keserbacakupan informasi dalam profil dan konsistensi antara profil dengan data dan informasi yang disampaikan pada masing-masing kriteria, serta menunjukan iklim yang kondusif untuk pengembangan dan reputasi sebahai rujukan di bidang keilmuannya.</label>
+
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation5" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation5">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation6" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation6">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation7" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation7">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation8" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation8">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <strong for="eva-enter-3" class="form-label">Visi, Misi, Tujuan dan Strategi Indikator Kinerja Utama</strong>
+                                            <div>
+                                                <label>Keserbacakupan informasi dalam profil dan konsistensi antara profil dengan data dan informasi yang disampaikan pada masing-masing kriteria, serta menunjukan iklim yang kondusif untuk pengembangan dan reputasi sebahai rujukan di bidang keilmuannya.</label>
+                                                
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation9" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation9">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation10" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation10">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation11" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation11">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation12" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation12">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <strong for="eva-enter-4" class="form-label">Kriteria Visi, Misi, Tujuan dan Strategi Indikator Kinerja Utama</strong>
+                                            <div>
+                                                <label>Kesesuaian visi, misi, tujuan, dan strategi (VMTS) unit pengelola program studi (UPPS) terhadap VMTS perguruan tinggi (PT) dan visi keilmuan program studi (PS).</label>
+                                                
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation13" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation13">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation14" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation14">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation15" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation15">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation16" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation16">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div>
+                                                <label>Mekanisme dan keterlibatan pemangku kepentingan dalam penyusunan VMTS UPPS.</label>
+                                                
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation17" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation17">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation18" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation18">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation19" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation19">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation20" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation20">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div>
+                                                <label>Strategi pencapaian tujuan disusun berdasarkan analisisyang sistematis.</label>
+                                                
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation21" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation21">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation22" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation22">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation23" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation23">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation24" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation24">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <strong for="eva-enter-7" class="form-label">Tata Pamong, Tata Kelola, dan Kerjasama</strong>
+                                            <div>
+                                                <label>Kelengkapan struktur organisasi dan keefektidan penyelenggaraan organisasi</label>
+                                                
+                                                <form class="was-validated">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation25" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation25">1</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation26" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation26">2</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation27" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation27">3</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="customControlValidation28" name="radio-stacked" required>
+                                                        <label class="custom-control-label" for="customControlValidation28">4</label>
+                                                        <div class="invalid-feedback ml-2">Beri penilaian!</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- kolom -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap y JQuery -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Abrir / cerrar menu -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#content-wrapper").toggleClass("toggled");
+    });
+  </script>
+  <!-- <script>
+        $('#myModal').click('hidden.bs.modal', function (event) {
+            $('#myModal').modal('show')
+        })
+
+  </script> -->
+
+</body>
+
+</html>
