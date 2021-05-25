@@ -33,4 +33,10 @@ Route::get('/operator-editProfilPengusul', [OperatorController::class, 'editprof
 Route::get('/operator-kerjasamaPendidikan', [OperatorController::class, 'kerjasamapendidikan'])->name('kerjasama-pendidikan');
 Route::get('/operator-kualitasInputMahasiswa', [OperatorController::class, 'kualitasinputmahasiswa'])->name('kualitas-input-mahasiswa');
 Route::get('/operator-sdm-ewmpdtps', [OperatorController::class, 'sdmewmpdtps'])->name('sdm-ewmp-dtps');
+Route::get('/operator-keuanganSarpras', [OperatorController::class, 'keuangan'])->name('keuangan');
+Route::get('/operator-kepuasanMahasiswa', [OperatorController::class, 'kepuasanmahasiswa'])->name('kepuasan-mahasiswa');
+Route::get('/operator-penelitian', [OperatorController::class, 'penelitian'])->name('penelitian');
+Route::get('/operator-prestasi-akademik-mhs', [OperatorController::class, 'luarantridharma'])->name('prestasi-akademik-mhs');
+Route::get('/operator-PKM', [OperatorController::class, 'pengabdian'])->name('pengabdian');
+
 Route::get('/evaluator-dashboard', [EvaluatorController::class, 'evaluator'])->name('evaluator-home');
