@@ -47,4 +47,29 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.SDM.EWMP-DTPS', compact('users'));
     }
+
+    public function keuangan(){
+        $users = Auth::user();
+        return view('Operator.KeuanganSarpras.keuangan', compact('users'));
+    }
+
+    public function kepuasanmahasiswa(){
+        $users = Auth::user();
+        return view('Operator.Pendidikan.kepuasan-mahasiswa', compact('users'));
+    }
+
+    public function penelitian(){
+        $users = Auth::user();
+        return view('Operator.Penelitian.penelitian', compact('users'));
+    }
+
+    public function prestasiakademikmhs(){
+        $users = Auth::user();
+        return view('Operator.LuaranTridharma.prestasi-akademik-mhs', compact('users'));
+    }
+
+    public function pengabdian(){
+        $users = Auth::user();
+        return view('Operator.PKM.pengabdian', compact('users'));
+    }
 }
