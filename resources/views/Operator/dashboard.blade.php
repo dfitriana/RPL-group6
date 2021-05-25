@@ -1,5 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
+@section('title','Home - Operator | SIAPS FMIPAA')
 @section('content')
 
     <!-- Page Content -->

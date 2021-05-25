@@ -1,5 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
+@section('title','Profil Pengusul - Operator | SIAPS FMIPA')
 @section('content')
 
 <!-- Page Content -->
