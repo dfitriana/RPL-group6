@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Home - Operator | SIAPS FMIPA</title>
+    <title>@yield('title','SIAPS FMIPA')</title>
 
     <!-- Bootstrap Css -->
 
@@ -73,11 +73,11 @@
                                                     <li><a href="{{route('kerjasama-pendidikan')}}">Kerjasama</a></li>
                                                     <li><a href="{{route('kualitas-input-mahasiswa')}}">Mahasiswa</a></li>
                                                     <li><a href="{{route('sdm-ewmp-dtps')}}">SDM</a></li>
-                                                    <li><a href="">Keuangan Sarpras</a></li>
-                                                    <li><a href="">Pendidikan</a></li>
-                                                    <li><a href="">Penelitian</a></li>
-                                                    <li><a href="">PKM</a></li>
-                                                    <li><a href="">Luaran Tridarma</a></li>
+                                                    <li><a href="{{route('keuangan')}}">Keuangan Sarpras</a></li>
+                                                    <li><a href="{{route('kepuasan-mahasiswa')}}">Pendidikan</a></li>
+                                                    <li><a href="{{route('penelitian')}}">Penelitian</a></li>
+                                                    <li><a href="{{route('pengabdian')}}">PKM</a></li>
+                                                    <li><a href="{{route('prestasi-akademik-mhs')}}">Luaran Tridharma</a></li>
                                                 </ul>
                                             </div>
                                         </div>
