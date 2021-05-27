@@ -1,6 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Kerjasama - Operator | SIAPS FMIPA')
+@section('title','Kerjasama | SIAPS FMIPA')
 @section('content')
 
         <div id="content" class="container-fluid p-6">
