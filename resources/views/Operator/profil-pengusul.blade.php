@@ -33,7 +33,7 @@
                             
                             <div class="card-body">
                                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                    <h1 class="h3 mb-0 text-gray-800">IDENTITAS PENGUSUL</h1>
+                                    <h1 class="h3 mb-0 text-gray-800" style="font-size: 25px;">IDENTITAS PENGUSUL</h1>
                                 </div>
                                 <table class="table v-middle">
                                     <tbody>
@@ -43,16 +43,12 @@
                                                     <p class="card-text">Perguruan Tinggi</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">Universitas Negeri Semarang</p>
                                             </td>
-                                            <td></td>
-                                            <td> </td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -60,16 +56,12 @@
                                                     <p class="card-text">Unit Pengelola Program Studi</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -77,16 +69,12 @@
                                                     <p class="card-text">Jenis Program</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">Sarjana (S1)</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -94,16 +82,12 @@
                                                     <p class="card-text">Perguruan Tinggi</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">Universitas Negeri Semarang</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -111,16 +95,12 @@
                                                     <p class="card-text">Nama Program Studi</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">Sistem Informasi</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -128,16 +108,12 @@
                                                     <p class="card-text">Alamat</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">Kampus Sekaran</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -145,16 +121,12 @@
                                                     <p class="card-text">Nomor Telepon</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">(024) 8508032</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -162,16 +134,12 @@
                                                     <p class="card-text">Email dan Website</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text">ilkom@mail.unnes.ac.id dan ilkom.unnes.ac.id</p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -179,16 +147,12 @@
                                                     <p class="card-text">Nomor SK Pendirian PT</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text"></p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -196,19 +160,121 @@
                                                     <p class="card-text">Tanggal SK Pendirian PT</p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td colspan="2">
                                                 <p class="card-text">:</p>
                                             </td>
-                                            <td></td>
-                                            <td>
+                                            <td colspan="4">
                                                 <p class="card-text"></p>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                        </tr>
+                                        <!-- dari sini -->
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Pejabat Penandatangan SK Pendirian PT</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">Presiden Republik Indonesia</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Nomor SK Pembukaan PS</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">SK Menristekdikti RI No. 111/KPT/I/2018</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Tanggal SK Pembukaan PS</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">2 Februari 2018</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Pejabat Penandatangan SK </p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">Sekjen a.n. Menristekdikti RI</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Pejabat Penandatangan SK Pembukaan PS</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">Sekjen a.n. Menristekdikti RI</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Tahun Pertama Kali Menerima Mahasiswa</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">2018</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Peringkat Terbaru Akreditasi PS</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">-</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="card-text">Nomor SK BAN-PT</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                <p class="card-text">:</p>
+                                            </td>
+                                            <td colspan="4">
+                                                <p class="card-text">-</p>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <br>
                             </div>
                         </div>
                     </div>
