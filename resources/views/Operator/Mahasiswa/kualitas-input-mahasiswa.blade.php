@@ -1,6 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Mahasiswa  | SIAPS FMIPA')
+@section('title','Mahasiswa: Kualitas Input Mahasiswa  | SIAPS FMIPA')
 @section('content')
 
         <div id="content" class="container-fluid p-6">
@@ -23,8 +23,8 @@
                                 <div class="card text-center">
                                     <div class="card-header" style="background-color: white;">
                                         <ul class="nav nav-tabs card-header-tabs">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="" id="isian">Kualitas Input Mahasiswa</a>
+                                            <li class="nav-item" id="isian">
+                                                <a class="nav-link active" href="">Kualitas Input Mahasiswa</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="">Mahasiswa Asing</a>
