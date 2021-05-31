@@ -72,4 +72,9 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.PKM.pengabdian', compact('users'));
     }
+
+    public function cekvalidasiLKPS(){
+        $users = Auth::user();
+        return view('Operator.cek-validasi-LKPS', compact('users'));
+    }
 }
