@@ -38,5 +38,6 @@ Route::get('/operator-kepuasanMahasiswa', [OperatorController::class, 'kepuasanm
 Route::get('/operator-penelitian', [OperatorController::class, 'penelitian'])->name('penelitian');
 Route::get('/operator-prestasi-akademik-mhs', [OperatorController::class, 'luarantridharma'])->name('prestasi-akademik-mhs');
 Route::get('/operator-PKM', [OperatorController::class, 'pengabdian'])->name('pengabdian');
+Route::get('/operator-cekvalidasi', [OperatorController::class, 'cekvalidasiLKPS'])->name('cek-validasi-LKPS');
 
 Route::get('/evaluator-dashboard', [EvaluatorController::class, 'evaluator'])->name('evaluator-home');
