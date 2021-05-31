@@ -98,9 +98,9 @@
                                         <div class="col-lg-12 px-2">
                                             <div class="submenu-box"> 
                                                 <ul class="list-unstyled m-0">
-                                                    <li><a href="">Isi Manajemen 1</a></li>
-                                                    <li><a href="">Isi Manajemen 2</a></li>
-                                                    <li><a href="">Isi Manajemen 3</a></li>
+                                                    <li><a href="{{route('cek-validasi-LKPS')}}">Cek Validasi LKPS</a></li>
+                                                    <!-- <li><a href="">Isi Manajemen 2</a></li>
+                                                    <li><a href="">Isi Manajemen 3</a></li> -->
                                                 </ul>
                                             </div>
                                         </div>
