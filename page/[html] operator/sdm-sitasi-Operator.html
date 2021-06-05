@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sumber Daya Manusia: Sitasi | SIAPS FMIPA</title>
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Hoja de estilos -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="font/font/flaticon.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="border-right" style="background-color: #007BFF;">
+            <div class="logo">
+                <h4 class="font-weight-bold mb-0">SIAPS FMIPA</h4>
+            </div>
+            <div class="menu list-group-flush">
+                <ul class="navbar-nav align-self-stretch" id="sidebar">
+                    <li class="sidebar-header">
+                        <img src="assets/img/habib.png" class="rounded-circle text-center" width="50px" style="margin-right: 15px;">
+                        <label class="user">Habib Taqiyullah</label>
+                    </li>
+
+                    <li class="has-sub"> 
+                        <a class="nav-link collapsed text-left" href="#collapseExample2" role="button" data-toggle="collapse" >
+                            <i class="flaticon-user ion-md-apps lead mr-2" style="color: white;"></i>Dashboard
+                        </a>
+                        <div class="collapse menu mega-dropdown" id="collapseExample2">
+                            <div class="dropmenu" aria-labelledby="navbarDropdown">
+                                <div class="container-fluid ">
+                                    <div class="row">
+                                        <div class="col-lg-12 px-2">
+                                            <div class="submenu-box"> 
+                                                <ul class="list-unstyled m-0">
+                                                    <li><a href="">Home</a></li>
+                                                    <li><a href="">Profil Pengusul</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- DIMULAI DARI SINI YA -->
+                    <li class="has-sub"> 
+                        <a class="nav-link collapsed text-left" href="#collapseExample3" role="button" data-toggle="collapse" >
+                            <i class="flaticon-user ion-md-calendar lead mr-2" style="color: white;"></i>Data Akreditasi
+                        </a>
+                        <div class="collapse menu mega-dropdown" id="collapseExample3">
+                            <div class="dropmenu" aria-labelledby="navbarDropdown">
+                                <div class="container-fluid ">
+                                    <div class="row">
+                                        <div class="col-lg-12 px-2">
+                                            <div class="submenu-box"> 
+                                                <ul class="list-unstyled m-0">
+                                                    <li><a href="">Kerjasama</a></li>
+                                                    <li><a href="">Mahasiswa</a></li>
+                                                    <li><a href="">SDM</a></li>
+                                                    <li><a href="">Keuangan Sarpras</a></li>
+                                                    <li><a href="">Pendidikan</a></li>
+                                                    <li><a href="">Penelitian</a></li>
+                                                    <li><a href="">PKM</a></li>
+                                                    <li><a href="">Luaran Tridarma</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="has-sub"> 
+                        <a class="nav-link collapsed text-left" href="#collapseExample4" role="button" data-toggle="collapse" >
+                            <i class="flaticon-user ion-md-settings lead mr-2" style="color: white;"></i>   Manajemen
+                        </a>
+                        <div class="collapse menu mega-dropdown" id="collapseExample4">
+                            <div class="dropmenu" aria-labelledby="navbarDropdown">
+                                <div class="container-fluid ">
+                                    <div class="row">
+                                        <div class="col-lg-12 px-2">
+                                            <div class="submenu-box"> 
+                                                <ul class="list-unstyled m-0">
+                                                    <li><a href="">Isi Manajemen 1</a></li>
+                                                    <li><a href="">Isi Manajemen 2</a></li>
+                                                    <li><a href="">Isi Manajemen 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Fin sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="w-100 bg-light-blue">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+                    <!-- <button class="btn btn-primary text-primary" id="menu-toggle">Menu</button> -->
+                    <div type="button"  id="menu-toggle" class="nav-icon1 hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Habib Taqiyullah
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <br>
+                                <div class="text-center">
+                                    <img class="img-profile rounded-circle text-center" src="assets/img/habib.png" width="50px">
+                                </div>
+                                <h5 class="dropdown-header text-center">Habib Taqiyullah</h5>
+                                <h6 class="dropdown-header text-center" style="font-weight: bold;">Operator</h6>
+                                <div class="dropdown-divider"></div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-danger btn-sm right" id="logout">Log Out</button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" class="container-fluid p-6">
+            <div class="container-fluid px-lg-4">
+
+                <div class="row">
+                    <div class="col-md-12 mt-lg-4 mt-4">
+                        <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                            <h1 class="h3 mb-0 text-gray-800">SDM</h1>
+                        </div>
+                        <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                            <p style="color: rgb(145, 145, 145);">Data Sumber Daya Manusia</p>
+                        </div>
+                    </div>
+
+                    <!-- kolom -->
+                    <div class="col-md-12 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card text-center">
+                                    <div class="card-header" style="background-color: white;">
+                                        <ul class="nav nav-tabs card-header-tabs">
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Profil Dosen</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Dosen Pembimbing Utama TA</a>
+                                            </li>
+                                            <li class="nav-item" id="scnd">
+                                                <a class="nav-link active" href="">EWMP DTPS</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Dosen Tidak Tetap</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Rekognisi</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Penelitian</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">PKM</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Publikasi</a>
+                                            </li>
+                                            <li class="nav-item" id="isian">
+                                                <a class="nav-link active" href="">Sitasi</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Paten</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">HKI</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Teknologi Tepat Guna</a>
+                                            </li>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="">Book Chapter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center" id="isian"></div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="alert" role="alert" id="note">
+                                    <h3 style="color: white;">Catatan!</h3>
+                                    <p>Data ini terakhir diambil dari Sistem Informasi Akademik, Sistem Informasi Kepegawaian, dan Sistem Informasi Penelitian Pengabdian: 05 November 2020.</p>
+                                </div>
+                                
+                                <div class="alert alert-secondary" role="alert">
+                                    Judul artikel karya ilmiah DTPS yang disitasi dalam 2 tahun terakhir tersaji pada Tabel berikut.
+                                </div>
+
+                                <nav class="navbar navbar-light">
+                                    <a class="navbar-brand">Data Karya Ilmiah DTPS yang Disitasi</a>
+                                    <form class="form-inline">
+                                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </nav>
+
+                                <table class="table v-middle">
+                                    <div class="table-responsive-xl">
+                                        <table class="table table-borderless table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">No.</th>
+                                                    <th scope="col">Nama Dosen</th>
+                                                    <th scope="col">Judul Artikel yang Disitasi (Jurnal, Volume, Tahun, Nomor, Halaman) </th>
+                                                    <th scope="col">Jumlah Sitasi</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Implementation of the Servqual Method as a Service 
+                                                        Support Decision Support System in Hotels
+                                                        <br>AW Melinda, R Arifudin, A Alamsyah
+                                                        <br>Journal of Advances in Information Systems and 
+                                                        Technology 1 (1), 91-97
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Improve the Accuracy of Support Vector Machine Using 
+                                                        Chi Square Statistic and Term Frequency Inverse 
+                                                        Document Frequency on Movie Review Sentiment 
+                                                        Analysis
+                                                        <br> UI Larasati, MA Muslim, R Arifudin, IU Alamsyah
+                                                        <br> Scientific Journal of Informatics 6 (1), 138-149
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Implementation of Expert System for Diabetes Diseases 
+                                                        using Naïve Bayes and Certainty Factor Methods
+                                                        <br> MI Insani, A Alamsyah, AT Putra
+                                                        <br> Scientific Journal of Informatics 5 (2), 185-193
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Scheduling Optimization of Sugarcane Harvest Using 
+                                                        Simulated Annealing Algorithm
+                                                        <br> EN Afifah, A Alamsyah, E Sugiharti
+                                                        <br> Scientific Journal of Informatics 5 (2), 138
+                                                        -147
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        The replacement of irreducible polynomial and affine 
+                                                        mapping for the construction of a strong S
+                                                        -box
+                                                        <br> A Bejo, TB Adji
+                                                        <br> Nonlinear Dynamics 93 (4), 2105
+                                                        -2118
+                                                    </td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Autocomplete and spell checking Levenshtein distance 
+                                                        algorithm to getting Text Suggest Error Data Searching 
+                                                        in Library
+                                                        <br> MM Yulianto, R Arifudin, A Alamsyah <br>
+                                                        Scientific Journal of Informatics 5 (1), 75
+                                                    </td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Comparison of Dynamic Programming Algorithm and 
+                                                        Greedy Algorithm on Integer Knapsack Problem in 
+                                                        Freight Transportation <br>
+                                                        GI Sampurno, E Sugiharti, A Alamsyah <br>
+                                                        Scientific Journal of Informatics 5 (1), 49
+                                                    </td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Comparison Between SAW and TOPSIS Methods in 
+                                                        Selection of Broiler Chicken Meat Quality <br>
+                                                        PTK Adi, E Sugiharti, A Alamsyah <br>
+                                                        Scientific Journal of Informatics 5 (1), 90
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Dr. Alamsyah S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Genetic Algorithm for Relational Database Optimization 
+                                                        in Reducing Query Execution Time <br>
+                                                        KT Hidayat, R Arifudin, A Alamsyah <br>
+                                                        Scientific Journal of Informatics 5 (1), 27
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Endang Sugiharti S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Bayes Theorem and Forward Chaining Method On 
+                                                        Expert System for Determine Hypercholesterolemia 
+                                                        Drugs <br>
+                                                        AA Perbawawati, E Sugiharti, MA Muslim <br>
+                                                        Scientific Journal of Informatics 6 (1), 116
+                                                        -124
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>Endang Sugiharti S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Comparison of PCA and 2DPCA Accuracy with K
+                                                        -
+                                                        Nearest Neighbor Classification in Face Image 
+                                                        Recognition <br>
+                                                        S Sutarti, AT Putra, E Sugiharti <br>
+                                                        Scientific Journal of Informatics 6 (1), 64
+                                                        -72
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>Endang Sugiharti S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Optimization of C4. 5 algorithm
+                                                        -based particle swarm 
+                                                        optimization for breast cancer diagnosis <br>
+                                                        MA Muslim, SH Rukmana, E Sugiharti, B Prasetiyo, S 
+                                                        Alimah <br>
+                                                        Journal of Physics: Conference Series 983 (1), 012063
+                                                    </td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>Endang Sugiharti S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Growing of the mathematical thinking imaginative to 
+                                                        students in designing of the teaching aids for CWD 
+                                                        towards to joyful learning <br>
+                                                        E Sugiharti, NF Kurniawati <br>
+                                                        Journal of Physics: Conference Series 983 (1), 012079                                                        
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>Endang Sugiharti S.Si.,M.Kom</td>
+                                                    <td>
+                                                        Online information system for data collection of cattle 
+                                                        quality <br>
+                                                        E Sugiharti, R Arifudin, AT Putra <br>
+                                                        Journal of Physics: Conference Series 983 (1), 012058
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>Riza Arifudin S.Pd., M.Cs.</td>
+                                                    <td>
+                                                        Android-Based Computer Assisted Instruction 
+                                                        Development as a Learning Resource for Supporting 
+                                                        Self-Regulated Learning. <br>
+                                                        P Hendikawati, MZ Zahid, R Arifudin <br>
+                                                        International Journal of Instruction 12 (3), 389-404
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>Riza Arifudin S.Pd., M.Cs.</td>
+                                                    <td>
+                                                        Keefektifitan Media Pembelajaran Berbasis Android 
+                                                        terhadap Kemampuan Pemecahan Masalah dan 
+                                                        Kemandirian Belajar <br>
+                                                        P Hendikawati, MZ Zahid, R Arifudin <br>
+                                                        PRISMA, Prosiding Seminar Nasional Matematika 2, 
+                                                        917-927
+                                                    </td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>Riza Arifudin S.Pd., M.Cs.</td>
+                                                    <td>
+                                                        The Comparison between Bayes and Certainty Factor 
+                                                        Method of Expert System in Early Diagnosis of Dengue 
+                                                        Infection <br>
+                                                        EY Rachmawati, B Prasetiyo, R Arifudin <br>
+                                                        Scientific Journal of Informatics 5 (2), 159-170
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>Riza Arifudin S.Pd., M.Cs.</td>
+                                                    <td>
+                                                        K-Nearest Neighbor and Naive Bayes Classifier 
+                                                        Algorithm in Determining The Classification of Healthy 
+                                                        Card Indonesia Giving to The Poor <br>
+                                                        YF Safri, R Arifudin, MA Muslim <br>
+                                                        Sci. J. Informatics 5 (1), 18
+                                                    </td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>Riza Arifudin S.Pd., M.Cs.</td>
+                                                    <td>
+                                                        Implementation of Decision Tree and Dempster Shafer 
+                                                        on Expert System for Lung Disease Diagnosis <br>
+                                                        AM Alfatah, R Arifudin, MA Muslim <br>
+                                                        Scientific Journal of Informatics 5 (1), 57
+                                                    </td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>Riza Arifudin S.Pd., M.Cs.</td>
+                                                    <td>
+                                                        Development of computer-assisted instruction 
+                                                        application for statistical data analysis android platform 
+                                                        as learning resource <br>
+                                                        P Hendikawati, R Arifudin, MZ Zahid <br>
+                                                        Journal of Physics: Conference Series 983 (1), 012057
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Much Aziz Muslim S.Kom., M.Kom.</td>
+                                                    <td>
+                                                        SVM Optimization Based on PSO and AdaBoost to 
+                                                        Increasing Accuracy of CKD Diagnosis <br>
+                                                        AF Indriani, MA Muslim <br>
+                                                        Lontar Komputer : Jurnal Ilmiah Teknologi Informasi 10 
+                                                        (2), 119-127
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>Much Aziz Muslim S.Kom., M.Kom.</td>
+                                                    <td>
+                                                        Decision Support System for the Selection of 
+                                                        Outstanding Students Using the AHP-TOPSIS 
+                                                        Combination Method <br>
+                                                        VD Iswari, FY Arini, MA Muslim <br>
+                                                        Lontar Komputer: Jurnal Ilmiah Teknologi Informasi, 40-
+                                                        48
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>Much Aziz Muslim S.Kom., M.Kom.</td>
+                                                    <td>
+                                                        Forecasting Inflation Rate Using Support Vector 
+                                                        Regression (SVR) Based Weight Attribute Particle 
+                                                        Swarm Optimization (WAPSO) <br>
+                                                        EM Priliani, AT Putra, MA Muslim <br>
+                                                        Scientific Journal of Informatics 5 (2), 118-127
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24</td>
+                                                    <td>Much Aziz Muslim S.Kom., M.Kom.</td>
+                                                    <td>
+                                                        Analisis dan Perancangan Sistem Informasi Penerbitan 
+                                                        Surat di PDAM Tirta Moedal Kota Semarang Cabang 
+                                                        Timur <br>
+                                                        R Kurniawan, JN Rifa’i, MA Muslim <br>
+                                                        Techno. Com 17 (2), 145-157
+                                                    </td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>Much Aziz Muslim S.Kom., M.Kom.</td>
+                                                    <td>
+                                                        Improving Accuracy of C4. 5 Algorithm Using Split 
+                                                        Feature Reduction Model and Bagging Ensemble for 
+                                                        Credit Card Risk Prediction <br>
+                                                        MA Muslim, A Nurzahputra, B Prasetiyo <br>
+                                                        International Conference on Information and 
+                                                        Communications Technology (ICOIACT)
+                                                    </td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>Much Aziz Muslim S.Kom., M.Kom.</td>
+                                                    <td>
+                                                        Perencanaan dan Analisis E-Book Interaktif Materi 
+                                                        ASEAN <br>
+                                                        WT Astuti, MA Muslim <br>
+                                                        JISKA (Jurnal Informatika Sunan Kalijaga) 2 (3), 127-
+                                                        134
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>Zaenal Abidin S.Si., M.Cs., Ph.D.</td>
+                                                    <td>
+                                                        Factors influencing internet users’ intention to sign epetitions
+                                                        KLM Ulo, AN Hidayanto, PI Sandhyaduhita, WR Fitriani, <br>
+                                                        Z Abidin <br>
+                                                        Transforming Government: People, Process and Policy
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>Zaenal Abidin S.Si., M.Cs., Ph.D.</td>
+                                                    <td>
+                                                        Gender-related differences in the use of technology in 
+                                                        mathematics classrooms <br>
+                                                        Z Abidin, A Mathrani, R Hunter <br>
+                                                        The International Journal of Information and Learning 
+                                                        Technology
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>Dr. Djuniadi M.T</td>
+                                                    <td>
+                                                        Pengembangan Media Pembelajaran Interaktif 3 
+                                                        Dimensi untuk Pembelajaran Materi Pengenalan 
+                                                        Lingkungan Pada Anak Usia Dini di Indonesia. <br>
+                                                        D Febiharsa, Djuniadi <br>
+                                                        Journal of SECE (Studies in Early Chilhood Education) 
+                                                        1 (1), 75-82
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30</td>
+                                                    <td>Dr. Feddy Setio Pribadi  S.Pd., MT. </td>
+                                                    <td>
+                                                        A scoring rubric for automatic short answer grading 
+                                                        system <br>
+                                                        U Hasanah, AE Permanasari, SS Kusumawardani, FS 
+                                                        Pribadi <br>
+                                                        Telkomnika 17 (2), 763-770
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>31</td>
+                                                    <td>Dr. Feddy Setio Pribadi  S.Pd., MT. </td>
+                                                    <td>
+                                                        Short answer scoring system using automatic reference 
+                                                        answer generation and geometric average normalizedlongest common subsequence (GAN-LCS) <br>
+                                                        FS Pribadi, AE Permanasari, TB Adji <br>
+                                                        Education and Information Technologies 23 (6), 2855-
+                                                        2866
+                                                    </td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32</td>
+                                                    <td>Dr. Feddy Setio Pribadi  S.Pd., MT. </td>
+                                                    <td>
+                                                        Short answer scoring using W-Bleu for regular 
+                                                        assessment in vocational high school <br>
+                                                        FS Pribadi, TB Adji, AE Permanasari, T Ninomiya <br>
+                                                        International Journal of Innovation and Learning 24 (4), 
+                                                        437-447
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap y JQuery -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Abrir / cerrar menu -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#content-wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
