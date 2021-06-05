@@ -24,10 +24,10 @@
                                     <div class="card-header" style="background-color: white;">
                                         <ul class="nav nav-tabs card-header-tabs">
                                             <li class="nav-item" id="isian">
-                                                <a class="nav-link active" href="">Kualitas Input Mahasiswa</a>
+                                                <a class="nav-link active" href="{{route('kualitas-input-mahasiswa')}}">Kualitas Input Mahasiswa</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Mahasiswa Asing</a>
+                                                <a class="nav-link active" href="{{route('mahasiswa-asing')}}">Mahasiswa Asing</a>
                                             </li>
                                         </ul>
                                     </div>
