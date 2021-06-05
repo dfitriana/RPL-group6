@@ -23,10 +23,10 @@
                                                 <a class="nav-link active" href="{{route('kerjasama-pendidikan')}}" id="isian">Kerjasama Pendidikan</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Kerjasama Penelitian</a>
+                                                <a class="nav-link active" href="{{route('kerjasama-penelitian')}}">Kerjasama Penelitian</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Kerjasama Pengabdian</a>
+                                                <a class="nav-link active" href="{{route('kerjasama-pengabdian')}}">Kerjasama Pengabdian</a>
                                             </li>
                                         </ul>
                                     </div>
