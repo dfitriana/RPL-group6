@@ -1,6 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Pendidikan | SIAPS FMIPA')
+@section('title','Pendidikan: Kepuasan Mahasiswa | SIAPS FMIPA')
 @section('content')
 
         <div id="content" class="container-fluid p-6">
@@ -59,60 +59,89 @@
                                 <table class="table v-middle">
                                     <div class="table-responsive-xl">
                                         <table class="table table-borderless table-hover">
-                                            <thead>
+                                        <thead>
                                                 <tr>
-                                                    <th scope="col">No.</th>
-                                                    <th scope="col">Aspek yang Diukur</th>
+                                                    <th scope="col" rowspan="2">No.</th>
+                                                    <th scope="col" rowspan="2">Aspek yang Diukur</th>
                                                     <th scope="col" colspan="4">Tingkat Kepuasan Mahasiswa (%)</th>
-                                                    <th scope="col">Rencana Tindak Lanjut oleh UPPS/S</th>
+                                                    <th scope="col" rowspan="2">Rencana Tindak Lanjut oleh UPPS/S</th>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="col" colspan="2"></th>
                                                     <th scope="col">Sangat Baik</th>
                                                     <th scope="col">Baik</th>
                                                     <th scope="col">Cukup</th>
                                                     <th scope="col">Kurang</th>
-                                                    <th scope="col"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Kendala (reliabiliti): kemampuan dosen, tenaga kependidikan, dan pengelola dalam memberikan pelayanan.</td>
-                                                    <td>63,13</td>
-                                                    <td>21,73</td>
-                                                    <td>10,8</td>
-                                                    <td>4,34</td>
-                                                    <td>Menyelenggarakan workshop pengelolaan pembelajaran</td>
+                                                    <td>61</td>
+                                                    <td>17,1</td>
+                                                    <td>19,5</td>
+                                                    <td>2,4</td>
+                                                    <td>
+                                                        Meningkatkan kemampuan 
+                                                        dosen dalam mengelola 
+                                                        pembelajaran
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
                                                     <td>Daya tanggap (responsivenesss): kemauan dari dosen, tenaga kependidikan, dan pengelola dalam membantu mahasiswa dan memberikan jasa dengan cepat.</td>
-                                                    <td>63,13</td>
-                                                    <td>21,73</td>
-                                                    <td>10,8</td>
-                                                    <td>4,34</td>
-                                                    <td>Menyelenggarakan workshop pengelolaan pembelajaran</td>
+                                                    <td>58,5</td>
+                                                    <td>17,1</td>
+                                                    <td>22</td>
+                                                    <td>2,4</td>
+                                                    <td>
+                                                        Meningkatkan daya tanggap 
+                                                        dosen dalam memberikan 
+                                                        layanan
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
                                                     <td>Kepastian (assurance): kemampuan dosen, tenaga kependidikan, dan pengelola untuk memberikan keyakinan kepada mahasiswa dalam pelayanan yang diberikan telah sesuai dengan ketentuan.</td>
-                                                    <td>63,13</td>
-                                                    <td>21,73</td>
-                                                    <td>10,8</td>
-                                                    <td>4,34</td>
-                                                    <td>Menyelenggarakan workshop pengelolaan pembelajaran</td>
+                                                    <td>53,7</td>
+                                                    <td>9,8</td>
+                                                    <td>29,3</td>
+                                                    <td>7,3</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
                                                     <td>Empati (empathy): kesediaan/kepedulian dosen, tenaga kependidikan, dan pengelola untuk memberikan perhatian kepada masalah atau kendala yang dialami mahasiswa.</td>
-                                                    <td>63,13</td>
-                                                    <td>21,73</td>
-                                                    <td>10,8</td>
-                                                    <td>4,34</td>
-                                                    <td>Menyelenggarakan workshop pengelolaan pembelajaran</td>
+                                                    <td>51,2</td>
+                                                    <td>17,1</td>
+                                                    <td>24,4</td>
+                                                    <td>7,3</td>
+                                                    <td></td>
                                                 </tr>
-                                              </tbody>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>
+                                                        Tangible: penilaian 
+                                                        mahasiswa terhadap 
+                                                        kecukupan, aksesibitas, 
+                                                        kualitas sarana dan 
+                                                        prasarana
+                                                    </td>
+                                                    <td>43,9</td>
+                                                    <td>7,3</td>
+                                                    <td>29,3</td>
+                                                    <td>19,5</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-center" colspan="2">Jumlah</th>
+                                                    <td>268,3</td>
+                                                    <td>68,4</td>
+                                                    <td>124,5</td>
+                                                    <td>38,9</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                       </div>
                                 </table>
