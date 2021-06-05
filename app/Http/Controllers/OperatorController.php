@@ -36,16 +36,64 @@ class OperatorController extends Controller
         return view('Operator.Kerjasama.kerjasama-pendidikan', compact('users'));
     }
 
+    public function kerjasamapenelitian(){
+        
+        $users = Auth::user();
+        return view('Operator.Kerjasama.kerjasama-penelitian', compact('users'));
+    }
+//belom ada UI-nya
+    public function kerjasamapengabdian(){
+        
+        $users = Auth::user();
+        return view('Operator.Kerjasama.kerjasama-pengabdian', compact('users'));
+    }
+
     public function kualitasinputmahasiswa(){
         
         $users = Auth::user();
         return view('Operator.Mahasiswa.kualitas-input-mahasiswa', compact('users'));
     }
 
+    public function mahasiswaasing(){
+        
+        $users = Auth::user();
+        return view('Operator.Mahasiswa.mahasiswa-asing', compact('users'));
+    }
+
     public function sdmewmpdtps(){
         
         $users = Auth::user();
         return view('Operator.SDM.EWMP-DTPS', compact('users'));
+    }
+
+    public function profildosen(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.profil-dosen', compact('users'));
+    }
+
+    public function dosenpembimbing(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.dosen-pembimbing', compact('users'));
+    }
+
+    public function dosentidaktetap(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.dosen-tidaktetap', compact('users'));
+    }
+
+    public function rekognisi(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.rekognisi', compact('users'));
+    }
+
+    public function sdmpenelitian(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.penelitian', compact('users'));
     }
 
     public function keuangan(){
