@@ -25,43 +25,43 @@
                                     <div class="card-header" style="background-color: white;">
                                         <ul class="nav nav-tabs card-header-tabs">
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Profil Dosen</a>
+                                                <a class="nav-link active" href="{{route('profil-dosen')}}">Profil Dosen</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Dosen Pembimbing Utama TA</a>
+                                                <a class="nav-link active" href="{{route('dosen-pembimbing')}}">Dosen Pembimbing Utama TA</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="" id="isian">EWMP DTPS</a>
+                                                <a class="nav-link active" href="{{route('sdm-ewmp-dtps')}}" id="isian">EWMP DTPS</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Dosen Tidak Tetap</a>
+                                                <a class="nav-link active" href="{{route('dosen-tidaktetap')}}">Dosen Tidak Tetap</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Rekognisi</a>
+                                                <a class="nav-link active" href="{{route('rekognisi')}}">Rekognisi</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Penelitian</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Penelitian</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">PKM</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">PKM</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Publikasi</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Publikasi</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Sitasi</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Sitasi</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Paten</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Paten</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">HKI</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">HKI</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Teknologi Tepat Guna</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Teknologi Tepat Guna</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Book Chapter</a>
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Book Chapter</a>
                                             </li>
                                         </ul>
                                     </div>
