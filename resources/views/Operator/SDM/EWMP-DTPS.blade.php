@@ -1,6 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Sumber Daya Manusia - Operator | SIAPS FMIPA')
+@section('title','Sumber Daya Manusia: Ekuivalen Waktu Mengajar Penuh Dosen Tetap Perguruan Tinggi | SIAPS FMIPA')
 @section('content')
 
 
@@ -189,7 +189,7 @@
                                                     <td>13,17</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>5</td>
+                                                    <td>6</td>
                                                     <td>Dr. Djuniadi, M. T.</td>
                                                     <td>V</td>
                                                     <td>3</td>
@@ -200,6 +200,19 @@
                                                     <td></td>
                                                     <td>24,09</td>
                                                     <td>12,045</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Dr. Feddy Setio Pribadi S.Pd., MT.</td>
+                                                    <td>V</td>
+                                                    <td>3</td>
+                                                    <td>12</td>
+                                                    <td></td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td>15</td>
+                                                    <td>7,5</td>
                                                 </tr>
                                               </tbody>
                                         </table>
