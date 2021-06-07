@@ -27,6 +27,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             [
                 'name' => 'Purwanto',
+                'nip' => '0',
                 'level' => 'Administrator',
                 'email' => 'admin@gmail.com',
                 'password' => bcrypt('1234'),
@@ -34,15 +35,25 @@ class UserSeeder extends Seeder
             ],
             [
                 'name' => 'Alfat Motorik',
+                'nip' => '0',
                 'level' => 'Operator',
                 'email' => 'operator@gmail.com',
                 'password' => bcrypt('1234'),
                 'remember_token' => Str::random(60),
             ],
             [
-                'name' => 'Taqi',
+                'name' => 'Prof. Dr. Susilo, M.',
+                'nip' => '130529515',
                 'level' => 'Evaluator',
                 'email' => 'evaluator@gmail.com',
+                'password' => bcrypt('1234'),
+                'remember_token' => Str::random(60),
+            ],
+            [
+                'name' => 'Dra. DWI YULIANTI, M. Si.',
+                'nip' => '131404299',
+                'level' => 'Evaluator',
+                'email' => 'evaluator2@gmail.com',
                 'password' => bcrypt('1234'),
                 'remember_token' => Str::random(60),
             ]
