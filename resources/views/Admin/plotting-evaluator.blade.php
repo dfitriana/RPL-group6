@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <form action="{{route('savedata')}}" method="POST">
+            <form action="{{route('savedata',$idperiode)}}" method="POST">
                 {{csrf_field()}}
                 <div class="mb-3">
                     <strong for="kode-periode" class="form-label">Kode Periode</strong>
@@ -27,28 +27,28 @@
                 </div>
 
                 <div class="mb-3">
-                    <strong for="eva-enter-1" class="form-label">Evaluator Internal 1</strong>
-                    <select class="form-control" name="eva-enter-1">
+                    <strong for="evaluator_1" class="form-label">Evaluator Internal 1</strong>
+                    <select class="form-control" name="evaluator_1">
                         @foreach($evaluator as $eva)
-                        <option>{{$eva->nama}}</option>
+                        <option value="{{$eva->nip}}">{{$eva->nama}}</option>
                         @endforeach
                     </select>
                 </div>
 
                 <div class="mb-3">
-                    <strong for="eva-enter-1" class="form-label">Evaluator Internal 1</strong>
-                    <select class="form-control" name="eva-enter-1">
+                    <strong for="evaluator_2" class="form-label">Evaluator Internal 1</strong>
+                    <select class="form-control" name="evaluator_2">
                         @foreach($evaluator as $eva)
-                        <option>{{$eva->nama}}</option>
+                        <option value="{{$eva->nip}}">{{$eva->nama}}</option>
                         @endforeach
                     </select>
                 </div>
 
                 <div class="mb-3">
-                    <strong for="eva-enter-1" class="form-label">Evaluator Internal 1</strong>
-                    <select class="form-control" name="eva-enter-1">
+                    <strong for="evaluator_3" class="form-label">Evaluator Internal 1</strong>
+                    <select class="form-control" name="evaluator_3">
                         @foreach($evaluator as $eva)
-                        <option>{{$eva->nama}}</option>
+                        <option value="{{$eva->nip}}">{{$eva->nama}}</option>
                         @endforeach
                     </select>
                 </div>
