@@ -14,13 +14,15 @@ class CreatePeriodesTable extends Migration
     public function up()
     {
         Schema::create('periodes', function (Blueprint $table) {
-            $table->id('kode_periode');
+            $table->string('kode_periode', 20)->primary();
             $table->string('program_studi', 50);
+            $table->increments('evaluator_id')->references('id')->on('evaluators');
+            $table->index('evaluator_id');
+            $table->dropPrimary('evaluator_id');
             $table->date('tgl_awal');
             $table->date('tgl_akhir');
             $table->date('updated_at');
             $table->date('created_at');
-
         });
     }
 
