@@ -96,6 +96,48 @@ class OperatorController extends Controller
         return view('Operator.SDM.penelitian', compact('users'));
     }
 
+    public function sdmpublikasi(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.publikasi', compact('users'));
+    }
+
+    public function sitasi(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.sitasi', compact('users'));
+    }
+
+    public function paten(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.paten', compact('users'));
+    }
+
+    public function hki(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.hki', compact('users'));
+    }
+
+    public function teknologitepatguna(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.teknologi-tepat-guna', compact('users'));
+    }
+
+    public function bookchapter(){
+        
+        $users = Auth::user();
+        return view('Operator.SDM.book-chapter', compact('users'));
+    }
+
+    public function sdmpkm(){//belom ada uinya
+        
+        $users = Auth::user();
+        return view('Operator.SDM.sdm-pkm', compact('users'));
+    }
+
     public function keuangan(){
         $users = Auth::user();
         return view('Operator.KeuanganSarpras.keuangan', compact('users'));
