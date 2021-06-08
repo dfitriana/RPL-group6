@@ -1,8 +1,7 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Sumber Daya Manusia: Penelitian DTPS | SIAPS FMIPA')
+@section('title','Sumber Daya Manusia: Book Chapter | SIAPS FMIPA')
 @section('content')
-
         <div id="content" class="container-fluid p-6">
             <div class="container-fluid px-lg-4">
 
@@ -29,7 +28,7 @@
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('dosen-pembimbing')}}">Dosen Pembimbing Utama TA</a>
                                             </li>
-                                            <li class="nav-item"  id="scnd">
+                                            <li class="nav-item" id="scnd">
                                                 <a class="nav-link active" href="{{route('sdm-ewmp-dtps')}}">EWMP DTPS</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
@@ -38,8 +37,8 @@
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('rekognisi')}}">Rekognisi</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}" id="isian">Penelitian</a>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Penelitian</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('sdm-pkm')}}">PKM</a> 
@@ -60,8 +59,8 @@
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('teknologi-tepat-guna')}}">Teknologi Tepat Guna</a>
                                             </li>
-                                            <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('book-chapter')}}">Book Chapter</a>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="{{route('book-chapter')}}"  id="isian">Book Chapter</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -76,11 +75,11 @@
                                 </div>
                                 
                                 <div class="alert alert-secondary" role="alert">
-                                    Jumlah judul penelitian yang dilaksanakan oleh DTPS berdasarkan sumber pembiayaan yang relevan dengan bidang program studi pada TS-2 sampai dengan TS tersaji pada Tabel berikut.
+                                    Judul luaran penelitian atau judul luaran PkM yang dihasilkan oleh DTPS delam 3 tahun terakhir tersaji pada Tabel berikut.
                                 </div>
 
                                 <nav class="navbar navbar-light">
-                                    <a class="navbar-brand">Data Penelitian DTPS</a>
+                                    <a class="navbar-brand">Data HKI Buku Ber-ISBN, Book Chapter</a>
                                     <form class="form-inline">
                                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -92,43 +91,41 @@
                                         <table class="table table-borderless table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" rowspan="2">No.</th>
-                                                    <th scope="col" rowspan="2">Sumber Pembiayaan</th>
-                                                    <th scope="col" colspan="2" class="text-center">Jumlah Judul Penelitian</th>
-                                                    <th scope="col" rowspan="2">Jumlah</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">TS-1 (2018)</th>
-                                                    <th scope="col">TS (2019)</th>
+                                                    <th scope="col">No.</th>
+                                                    <th scope="col">Luaran Penelitian dan PKM</th>
+                                                    <th scope="col">Tahun (YYYY)</th>
+                                                    <th scope="col">Keterangan</th>
                                                 </tr>
                                               </thead>
                                               <tbody>
                                                 <tr>
+                                                    <th>IV</th>
+                                                    <th colspan="3">
+                                                        Buku ber-ISBN, Book Chapter
+                                                    </th>
+                                                </tr>
+                                                <tr>
                                                     <td>1</td>
-                                                    <td>a) Perguruan Tinggi, b)Mandiri</td>
-                                                    <td>9</td>
-                                                    <td>12</td>
-                                                    <td>21</td>
+                                                    <td>
+                                                        Analysis of the Student Ability Growth to 
+                                                        Integrate the Character Values in 
+                                                        Mathematics Learning Process (Case Study 
+                                                        on Findings at Guangxi Normal University)
+                                                    </td>
+                                                    <td>2018</td>
+                                                    <td>Buku Ber-ISBN</td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
-                                                    <td>Lembaga dalam negeri (di luar PT)</td>
-                                                    <td>7</td>
-                                                    <td>3</td>
-                                                    <td>10</td>
+                                                    <td>Dasar-dasar pemprograman Web</td>
+                                                    <td>2018</td>
+                                                    <td>Buku Ber-ISBN</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
-                                                    <td>Lembaga Luar Negeri</td>
-                                                    <td>0</td>
-                                                    <td>1</td>
-                                                    <td>1</td>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="2" class="text-center">Jumlah</td>
-                                                    <td>16</td>
-                                                    <td>16</td>
-                                                    <td>32</td>
+                                                    <td>Mobile Programming Menggunakan App Inventor</td>
+                                                    <td>2018</td>
+                                                    <td>Buku Ber-ISBN</td>
                                                 </tr>
                                               </tbody>
                                         </table>

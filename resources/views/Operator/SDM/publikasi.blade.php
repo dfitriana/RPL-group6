@@ -1,6 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Sumber Daya Manusia: Penelitian DTPS | SIAPS FMIPA')
+@section('title','Sumber Daya Manusia: Publikasi Ilmiah DTPS | SIAPS FMIPA')
 @section('content')
 
         <div id="content" class="container-fluid p-6">
@@ -38,15 +38,15 @@
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('rekognisi')}}">Rekognisi</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}" id="isian">Penelitian</a>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Penelitian</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('sdm-pkm')}}">PKM</a> 
                                                 <!-- belom -->
                                             </li>
-                                            <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('publikasi')}}">Publikasi</a>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="{{route('publikasi')}}" id="isian">Publikasi</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('sitasi')}}">Sitasi</a>
@@ -76,11 +76,11 @@
                                 </div>
                                 
                                 <div class="alert alert-secondary" role="alert">
-                                    Jumlah judul penelitian yang dilaksanakan oleh DTPS berdasarkan sumber pembiayaan yang relevan dengan bidang program studi pada TS-2 sampai dengan TS tersaji pada Tabel berikut.
+                                    Jumlah judul publikasi ilmiah dengan judul yang relevan dengan bidang program studi, yang dihasilkan oleh DTPS delam 3 tahun terakhir tersaji pada Tabel berikut.
                                 </div>
 
                                 <nav class="navbar navbar-light">
-                                    <a class="navbar-brand">Data Penelitian DTPS</a>
+                                    <a class="navbar-brand">Data Publikasi Ilmiah DTPS</a>
                                     <form class="form-inline">
                                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -93,46 +93,95 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col" rowspan="2">No.</th>
-                                                    <th scope="col" rowspan="2">Sumber Pembiayaan</th>
-                                                    <th scope="col" colspan="2" class="text-center">Jumlah Judul Penelitian</th>
+                                                    <th scope="col" rowspan="2">Jenis Publikasi</th>
+                                                    <th scope="col" colspan="2" class="text-center">Jumlah Judul</th>
                                                     <th scope="col" rowspan="2">Jumlah</th>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="col">TS-1 (2018)</th>
-                                                    <th scope="col">TS (2019)</th>
+                                                    <th scope="col">TS-1</th>
+                                                    <th scope="col">TS</th>
                                                 </tr>
                                               </thead>
                                               <tbody>
                                                 <tr>
                                                     <td>1</td>
-                                                    <td>a) Perguruan Tinggi, b)Mandiri</td>
-                                                    <td>9</td>
-                                                    <td>12</td>
-                                                    <td>21</td>
+                                                    <td>Jurnal penelitian tidak terakreditasi </td>
+                                                    <td>6</td>
+                                                    <td></td>
+                                                    <td>6</td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
-                                                    <td>Lembaga dalam negeri (di luar PT)</td>
+                                                    <td>Jurnal penelitian nasional terakreditasi</td>
+                                                    <td>8</td>
                                                     <td>7</td>
-                                                    <td>3</td>
-                                                    <td>10</td>
+                                                    <td>15</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
-                                                    <td>Lembaga Luar Negeri</td>
+                                                    <td>Jurnal penelitian internasional</td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Jurnal penelitian internasional bereputasi</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Seminar wilayah/lokal/perguruan tinggi</td>
+                                                    <td>1</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Seminar nasional</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Seminar internasional</td>
+                                                    <td>16</td>
+                                                    <td>19</td>
+                                                    <td>35</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Tulisan di media massa wilayah</td>
+                                                    <td></td>
+                                                    <td></td>
                                                     <td>0</td>
-                                                    <td>1</td>
-                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Tulisan di media massa nasional</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Tulisan di media massa internasional</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>0</td>
                                                 </tr>
                                                 <tr>
                                                     <th colspan="2" class="text-center">Jumlah</td>
-                                                    <td>16</td>
-                                                    <td>16</td>
-                                                    <td>32</td>
+                                                    <td>42</td>
+                                                    <td>40</td>
+                                                    <td>82</td>
                                                 </tr>
-                                              </tbody>
+                                            </tbody>
                                         </table>
-                                      </div>
+                                    </div>
                                 </table>
                             </div>
                         </div>

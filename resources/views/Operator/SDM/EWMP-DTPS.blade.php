@@ -43,25 +43,26 @@
                                                 <a class="nav-link active" href="{{route('sdm-penelitian')}}">Penelitian</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">PKM</a>
+                                                <a class="nav-link active" href="{{route('sdm-pkm')}}">PKM</a> 
+                                                <!-- belom -->
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Publikasi</a>
+                                                <a class="nav-link active" href="{{route('publikasi')}}">Publikasi</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Sitasi</a>
+                                                <a class="nav-link active" href="{{route('sitasi')}}">Sitasi</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Paten</a>
+                                                <a class="nav-link active" href="{{route('paten')}}">Paten</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">HKI</a>
+                                                <a class="nav-link active" href="{{route('hki')}}">HKI</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Teknologi Tepat Guna</a>
+                                                <a class="nav-link active" href="{{route('teknologi-tepat-guna')}}">Teknologi Tepat Guna</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('sdm-penelitian')}}">Book Chapter</a>
+                                                <a class="nav-link active" href="{{route('book-chapter')}}">Book Chapter</a>
                                             </li>
                                         </ul>
                                     </div>

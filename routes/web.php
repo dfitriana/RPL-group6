@@ -43,13 +43,13 @@ Route::get('/operator-sdm-dosenpembimbing', [OperatorController::class, 'dosenpe
 Route::get('/operator-sdm-dosenTidakTetap', [OperatorController::class, 'dosentidaktetap'])->name('dosen-tidaktetap');
 Route::get('/operator-sdm-rekognisi', [OperatorController::class, 'rekognisi'])->name('rekognisi');
 Route::get('/operator-sdm-sdmpenelitian', [OperatorController::class, 'sdmpenelitian'])->name('sdm-penelitian');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
-// Route::get('/operator-sdm-profildosen', [OperatorController::class, 'profildosen'])->name('profil-dosen');
+Route::get('/operator-sdm-publikasi', [OperatorController::class, 'sdmpublikasi'])->name('publikasi');
+Route::get('/operator-sdm-sitasi', [OperatorController::class, 'sitasi'])->name('sitasi');
+Route::get('/operator-sdm-paten', [OperatorController::class, 'paten'])->name('paten');
+Route::get('/operator-sdm-hki', [OperatorController::class, 'hki'])->name('hki');
+Route::get('/operator-sdm-teknologitepatguna', [OperatorController::class, 'teknologitepatguna'])->name('teknologi-tepat-guna');
+Route::get('/operator-sdm-bookchapter', [OperatorController::class, 'bookchapter'])->name('book-chapter');
+Route::get('/operator-sdm-pkm', [OperatorController::class, 'sdmpkm'])->name('sdm-pkm'); //belom ada UI-nya
 
 Route::get('/operator-keuanganSarpras', [OperatorController::class, 'keuangan'])->name('keuangan');
 Route::get('/operator-kepuasanMahasiswa', [OperatorController::class, 'kepuasanmahasiswa'])->name('kepuasan-mahasiswa');

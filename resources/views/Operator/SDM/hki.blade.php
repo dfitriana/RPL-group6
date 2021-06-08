@@ -1,8 +1,7 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Sumber Daya Manusia: Dosen Pembimbing Utama Tugas Akhir | SIAPS FMIPA')
+@section('title','Sumber Daya Manusia: Hak Cipta | SIAPS FMIPA')
 @section('content')
-
         <div id="content" class="container-fluid p-6">
             <div class="container-fluid px-lg-4">
 
@@ -26,8 +25,8 @@
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('profil-dosen')}}">Profil Dosen</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="{{route('dosen-pembimbing')}}" id="isian">Dosen Pembimbing Utama TA</a>
+                                            <li class="nav-item"  id="scnd">
+                                                <a class="nav-link active" href="{{route('dosen-pembimbing')}}">Dosen Pembimbing Utama TA</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('sdm-ewmp-dtps')}}">EWMP DTPS</a>
@@ -54,8 +53,8 @@
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('paten')}}">Paten</a>
                                             </li>
-                                            <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="{{route('hki')}}">HKI</a>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="{{route('hki')}}" id="isian">HKI</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
                                                 <a class="nav-link active" href="{{route('teknologi-tepat-guna')}}">Teknologi Tepat Guna</a>
@@ -76,11 +75,11 @@
                                 </div>
                                 
                                 <div class="alert alert-secondary" role="alert">
-                                    DTPS yang menjadi pembimbing utama pada kegiatan tugas akhir mahasiswa (Laporan Akhir/Skripsi/Tesis/Disertasi) dalam 3 tahun terakhir tersaji pada Tabel berikut.
+                                    Judul luaran penelitian atau judul luaran PkM yang dihasilkan oleh DTPS delam 3 tahun terakhir tersaji pada Tabel berikut.
                                 </div>
 
                                 <nav class="navbar navbar-light">
-                                    <a class="navbar-brand">Data Dosen Pembimbing Tugas Akhir</a>
+                                    <a class="navbar-brand">Data HKI Hak Cipta</a>
                                     <form class="form-inline">
                                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -92,101 +91,117 @@
                                         <table class="table table-borderless table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" rowspan="3">No.</th>
-                                                    <th scope="col" rowspan="3">Nama Dosen</th>
-                                                    <th scope="col" colspan="6" class="text-center">Jumlah Mahasiswa yang Dibimbing</th>
-                                                    <th scope="col" rowspan="3">Rata-rata Jumlah Bimbingan Di Semua Program/Semester</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" colspan="3">PS yang Diakreditasi</th>
-                                                    <th scope="col" colspan="3">PS Lain pada Program yang Sama Di PT</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">TS-1</th>
-                                                    <th scope="col">TS</th>
-                                                    <th scope="col">Rata-Rata</th>
-                                                    <th scope="col">TS-1</th>
-                                                    <th scope="col">TS</th>
-                                                    <th scope="col">Rata-Rata</th>
+                                                    <th scope="col">No.</th>
+                                                    <th scope="col">Luaran Penelitian dan PKM</th>
+                                                    <th scope="col">Tahun (YYYY)</th>
+                                                    <th scope="col">Keterangan</th>
                                                 </tr>
                                               </thead>
                                               <tbody>
                                                 <tr>
+                                                    <th>II</th>
+                                                    <th colspan="3">
+                                                        HKI: a) Hak Cipta, b) Desain Produk Industri, c) Perlindungan Varietas Tanaman 
+                                                        (Sertifikat Perlindungan Varietas Tanaman, Sertifikat Pelepasan Varietas, Sertifikat 
+                                                        Pendaftaran Varietas), d) Desain Tata Letak Sirkuit Terpadu, e) dll.)
+                                                    </th>
+                                                </tr>
+                                                <tr>
                                                     <td>1</td>
-                                                    <td>Dr. Alamsyah, S. Si., M. Kom.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>7</td>
-                                                    <td>7</td>
-                                                    <td>7</td>
-                                                    <td>7</td>
+                                                    <td>Aplikasi "Sistem Pengenalan Ekspresi Wajah 
+                                                        Menggunakan Metode Fisherface Dengan 
+                                                        Pendekatan Jaringan Syaraf Tiruan 
+                                                        Backpropagation"
+                                                    </td>
+                                                    <td>2020</td>
+                                                    <td>
+                                                        EC00202021237 <br>
+                                                        Zaenal Abidin, S.Si., M.Cs., Ph.D.
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
-                                                    <td>Endang Sugiharti, S. Si., M. Kom.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>14</td>
-                                                    <td>5</td>
-                                                    <td>9,5</td>
-                                                    <td>9,5</td>
+                                                    <td>Web-based Sentiment Analysis Application 
+                                                        Menggunakan Kernel Radial Basis 
+                                                        Functional Dan Information Gain
+                                                    </td>
+                                                    <td>2020</td>
+                                                    <td>
+                                                        EC00202017354 <br>
+                                                        Wahyu Destian 
+                                                        Wicaksono, Zaenal 
+                                                        Abidin, S.Si., M.Cs., 
+                                                        Ph.D.,
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
-                                                    <td>Riza Arifudin, S. Pd., M. Cs.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>10</td>
-                                                    <td>4</td>
-                                                    <td>7</td>
-                                                    <td>7</td>
+                                                    <td>SURAT PENCATATAN CIPTAAN (HAK 
+                                                        CIPTA) "Data Mining Algoritma C.45 Disertai 
+                                                        Contoh Kasus dan Penerapannya dengan 
+                                                        Program Komputer"
+                                                    </td>
+                                                    <td>2019</td>
+                                                    <td>EC00201928000 <br>
+                                                        Much Aziz Muslim
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
-                                                    <td>Much. Aziz Muslim, S. Kom., M. Kom.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>16</td>
-                                                    <td>6</td>
-                                                    <td>11</td>
-                                                    <td>11</td>
+                                                    <td>SURAT PENCATATAN CIPTAAN (HAK 
+                                                        CIPTA) “Program Aplikasi Banyan”
+                                                    </td>
+                                                    <td>2019</td>
+                                                    <td>EC00201991200 <br>
+                                                        Alamsyah, S.Si., 
+                                                        M.Kom
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>5</td>
-                                                    <td>Zaenal Abidin, S. Si., M. Cs., Ph.D.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>1</td>
-                                                    <td>11</td>
-                                                    <td>6</td>
-                                                    <td>6</td>
+                                                    <td>Aplikasi Prediksi Banckrupty Berbasis 
+                                                        Jaringan Syaraf Tiruan
+                                                    </td>
+                                                    <td>2019</td>
+                                                    <td>EC00201991192 <br>
+                                                        Alamsyah, S.Si., 
+                                                        M.Kom, Much Aziz 
+                                                        Muslim, S.Kom., 
+                                                        M.Kom.
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>6</td>
-                                                    <td>Dr. Djuniadi, M. T.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>12</td>
-                                                    <td>16</td>
-                                                    <td>14</td>
-                                                    <td>14</td>
+                                                    <td>SURAT PENCATATAN CIPTAAN (HAK 
+                                                        CIPTA) “Sistem Informasi Pendataan 
+                                                        Ternak”
+                                                    </td>
+                                                    <td>2018</td>
+                                                    <td>EC00201802839 <br>
+                                                        Endang Sugiharti, Riza 
+                                                        Arifudin
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>7</td>
-                                                    <td>Dr. Feddy Setio Pribadi S.Pd., MT.</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>14</td>
-                                                    <td>17</td>
-                                                    <td>15,5</td>
-                                                    <td>15,5</td>
+                                                    <td>SURAT PENCATATAN CIPTAAN (HAK 
+                                                        CIPTA) “Panduan Aplikasi Kartu Ternak”
+                                                    </td>
+                                                    <td>2019</td>
+                                                    <td>EC00201985612 <br>
+                                                        Endang Sugiharti
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>SURAT PENCATATAN CIPTAAN (HAK 
+                                                        CIPTA)
+                                                        Aplikasi “Statistics Data Analysis”
+                                                    </td>
+                                                    <td>2018</td>
+                                                    <td>EC00201811499 <br>
+                                                        Riza Arifudin
+                                                    </td>
                                                 </tr>
                                               </tbody>
                                         </table>
