@@ -24,10 +24,10 @@
                                     <div class="card-header" style="background-color: white;">
                                         <ul class="nav nav-tabs card-header-tabs">
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Kurikulum</a>
+                                                <a class="nav-link active" href="{{route('kurikulum')}}">Kurikulum</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Integrasi Penelitian/PKM dan Pembelajaran</a>
+                                                <a class="nav-link active" href="{{route('integrasi')}}">Integrasi Penelitian/PKM dan Pembelajaran</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link active" href="{{route('kepuasan-mahasiswa')}}" id="isian">Kepuasan Mahasiswa</a>
