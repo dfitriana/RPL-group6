@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 
 class OperatorController extends Controller
 {
+//operator-dashboard
     public function operator(){
         
         $users = Auth::user();
@@ -29,7 +30,7 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.edit-profil-pengusul', compact('users'));
     }
-
+//data kerjasama
     public function kerjasamapendidikan(){
         
         $users = Auth::user();
@@ -41,13 +42,13 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.Kerjasama.kerjasama-penelitian', compact('users'));
     }
-//belom ada UI-nya
+
     public function kerjasamapengabdian(){
         
         $users = Auth::user();
         return view('Operator.Kerjasama.kerjasama-pengabdian', compact('users'));
     }
-
+//data mahasiswa
     public function kualitasinputmahasiswa(){
         
         $users = Auth::user();
@@ -59,7 +60,7 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.Mahasiswa.mahasiswa-asing', compact('users'));
     }
-
+//data sdm
     public function sdmewmpdtps(){
         
         $users = Auth::user();
@@ -137,12 +138,12 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.SDM.sdm-pkm', compact('users'));
     }
-
+//data keuangan sarpras
     public function keuangan(){
         $users = Auth::user();
         return view('Operator.KeuanganSarpras.keuangan', compact('users'));
     }
-
+//data pendidikan
     public function kepuasanmahasiswa(){
         $users = Auth::user();
         return view('Operator.Pendidikan.kepuasan-mahasiswa', compact('users'));
@@ -157,12 +158,12 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.Pendidikan.integrasi', compact('users'));
     }
-
+//data penelitian
     public function penelitian(){
         $users = Auth::user();
         return view('Operator.Penelitian.penelitian', compact('users'));
     }
-
+//data luaran tridharma
     public function prestasiakademikmhs(){
         $users = Auth::user();
         return view('Operator.LuaranTridharma.prestasi-akademik-mhs', compact('users'));
@@ -182,12 +183,13 @@ class OperatorController extends Controller
         $users = Auth::user();
         return view('Operator.LuaranTridharma.lulusan', compact('users'));
     }
-
+//data PKM
     public function pengabdian(){
         $users = Auth::user();
         return view('Operator.PKM.pengabdian', compact('users'));
     }
 
+//operator-manajemen
     public function cekvalidasiLKPS(){
         $users = Auth::user();
         return view('Operator.cek-validasi-LKPS', compact('users'));
