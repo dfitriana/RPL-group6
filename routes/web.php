@@ -49,12 +49,16 @@ Route::get('/operator-sdm-paten', [OperatorController::class, 'paten'])->name('p
 Route::get('/operator-sdm-hki', [OperatorController::class, 'hki'])->name('hki');
 Route::get('/operator-sdm-teknologitepatguna', [OperatorController::class, 'teknologitepatguna'])->name('teknologi-tepat-guna');
 Route::get('/operator-sdm-bookchapter', [OperatorController::class, 'bookchapter'])->name('book-chapter');
-Route::get('/operator-sdm-pkm', [OperatorController::class, 'sdmpkm'])->name('sdm-pkm'); //belom ada UI-nya
-
+Route::get('/operator-sdm-pkm', [OperatorController::class, 'sdmpkm'])->name('sdm-pkm'); 
 Route::get('/operator-keuanganSarpras', [OperatorController::class, 'keuangan'])->name('keuangan');
-Route::get('/operator-kepuasanMahasiswa', [OperatorController::class, 'kepuasanmahasiswa'])->name('kepuasan-mahasiswa');
+Route::get('/operator-pendidikan-kepuasanMahasiswa', [OperatorController::class, 'kepuasanmahasiswa'])->name('kepuasan-mahasiswa');
+Route::get('/operator-pendidikan-kurikulum', [OperatorController::class, 'kurikulum'])->name('kurikulum');
+Route::get('/operator-pendidikan-integrasi', [OperatorController::class, 'integrasi'])->name('integrasi');
 Route::get('/operator-penelitian', [OperatorController::class, 'penelitian'])->name('penelitian');
-Route::get('/operator-prestasi-akademik-mhs', [OperatorController::class, 'luarantridharma'])->name('prestasi-akademik-mhs');
+Route::get('/operator-luarantridharma-prestasiakademikmhs', [OperatorController::class, 'prestasiakademikmhs'])->name('prestasi-akademik-mhs');
+Route::get('/operator-luarantridharma-ipklulusan', [OperatorController::class, 'ipklulusan'])->name('ipk-lulusan');
+Route::get('/operator-luarantridharma-prestasi-nonakademik-mhs', [OperatorController::class, 'prestasinonakademikmhs'])->name('prestasi-nonakademik-mhs');
+Route::get('/operator-luarantridharma-lulusan', [OperatorController::class, 'lulusan'])->name('lulusan');
 Route::get('/operator-PKM', [OperatorController::class, 'pengabdian'])->name('pengabdian');
 Route::get('/operator-cekvalidasi', [OperatorController::class, 'cekvalidasiLKPS'])->name('cek-validasi-LKPS');
 
