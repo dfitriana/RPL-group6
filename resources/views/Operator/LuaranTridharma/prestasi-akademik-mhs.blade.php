@@ -23,16 +23,16 @@
                                     <div class="card-header" style="background-color: white;">
                                         <ul class="nav nav-tabs card-header-tabs">
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">IPK Lulusan</a>
+                                                <a class="nav-link active" href="{{route('ipk-lulusan')}}">IPK Lulusan</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="" id="isian">Prestasi Akademik Mahasiswa</a>
+                                                <a class="nav-link active" href="{{route('prestasi-akademik-mhs')}}" id="isian">Prestasi Akademik Mahasiswa</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Prestasi non Akademik Mahasiswa</a>
+                                                <a class="nav-link active" href="{{route('prestasi-nonakademik-mhs')}}">Prestasi non Akademik Mahasiswa</a>
                                             </li>
                                             <li class="nav-item"  id="scnd">
-                                                <a class="nav-link active" href="">Lulusan</a>
+                                                <a class="nav-link active" href="{{route('lulusan')}}">Lulusan</a>
                                             </li>
                                         </ul>
                                     </div>
