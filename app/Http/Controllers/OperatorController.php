@@ -132,7 +132,7 @@ class OperatorController extends Controller
         return view('Operator.SDM.book-chapter', compact('users'));
     }
 
-    public function sdmpkm(){//belom ada uinya
+    public function sdmpkm(){
         
         $users = Auth::user();
         return view('Operator.SDM.sdm-pkm', compact('users'));
@@ -148,6 +148,16 @@ class OperatorController extends Controller
         return view('Operator.Pendidikan.kepuasan-mahasiswa', compact('users'));
     }
 
+    public function kurikulum(){
+        $users = Auth::user();
+        return view('Operator.Pendidikan.kurikulum', compact('users'));
+    }
+
+    public function integrasi(){
+        $users = Auth::user();
+        return view('Operator.Pendidikan.integrasi', compact('users'));
+    }
+
     public function penelitian(){
         $users = Auth::user();
         return view('Operator.Penelitian.penelitian', compact('users'));
@@ -156,6 +166,21 @@ class OperatorController extends Controller
     public function prestasiakademikmhs(){
         $users = Auth::user();
         return view('Operator.LuaranTridharma.prestasi-akademik-mhs', compact('users'));
+    }
+
+    public function ipklulusan(){
+        $users = Auth::user();
+        return view('Operator.LuaranTridharma.ipk-lulusan', compact('users'));
+    }
+
+    public function prestasinonakademikmhs(){
+        $users = Auth::user();
+        return view('Operator.LuaranTridharma.prestasi-nonakademik-mhs', compact('users'));
+    }
+
+    public function lulusan(){
+        $users = Auth::user();
+        return view('Operator.LuaranTridharma.lulusan', compact('users'));
     }
 
     public function pengabdian(){
