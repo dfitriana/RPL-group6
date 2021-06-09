@@ -73,14 +73,14 @@ class AdminController extends Controller
             DB::table('Data_dosens')
                 ->updateOrInsert(
                     ['nip' => $data['nip']],
-                    ['nama' => $data['nama']],
-                    ['email' => $data['email']],
-                    ['jabatan_id' => $data['jabatan_id']],
-                    ['kode_unit' => $data['kode_unit']],
-                    ['prodi_doskar' => $data['prodi_doskar']],
-                    ['mail_unnes' => $data['mail_unnes']],
-                    ['bidang_ilmu' => $data['bidang_ilmu']],
-                    ['prodi_jabatan' => $data['prodi_jabatan']]
+                    ['nama' => $data['nama'],
+                    'email' => $data['email'],
+                    'jabatan_id' => $data['jabatan_id'],
+                    'kode_unit' => $data['kode_unit'],
+                    'prodi_doskar' => $data['prodi_doskar'],
+                    'mail_unnes' => $data['mail_unnes'],
+                    'bidang_ilmu' => $data['bidang_ilmu'],
+                    'prodi_jabatan' => $data['prodi_jabatan']]
                 );
         }
         // $periodes = periode::latest('upload_time')->first;
