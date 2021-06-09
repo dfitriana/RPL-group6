@@ -82,7 +82,7 @@
                                             <a class="nav-link active" href="#">Kerjasama</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Mahasiswa</a>
+                                            <a class="nav-link" href="{{route('home-mahasiswa')}}" id="scnd">Mahasiswa</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">SDM</a>
