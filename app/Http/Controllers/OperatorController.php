@@ -12,185 +12,223 @@ use Illuminate\Support\Facades\Auth;
 
 class OperatorController extends Controller
 {
-//operator-dashboard
-    public function operator(){
-        
+    //operator-dashboard
+    public function operator()
+    {
+
         $users = Auth::user();
         return view('Operator.dashboard', compact('users'));
     }
+    //dashboard-home
+    public function mahasiswa()
+    {
+        $users = Auth::User();
+        return view('Operator.Home.mahasiswa', compact('users'));
+    }
+    //dashboard-pengusul
+    public function profilpengusul()
+    {
 
-    public function profilpengusul(){
-        
         $users = Auth::user();
         return view('Operator.profil-pengusul', compact('users'));
     }
 
-    public function editprofilpengusul(){
-        
+    public function editprofilpengusul()
+    {
+
         $users = Auth::user();
         return view('Operator.edit-profil-pengusul', compact('users'));
     }
-//data kerjasama
-    public function kerjasamapendidikan(){
-        
+    //data kerjasama
+    public function kerjasamapendidikan()
+    {
+
         $users = Auth::user();
         return view('Operator.Kerjasama.kerjasama-pendidikan', compact('users'));
     }
 
-    public function kerjasamapenelitian(){
-        
+    public function kerjasamapenelitian()
+    {
+
         $users = Auth::user();
         return view('Operator.Kerjasama.kerjasama-penelitian', compact('users'));
     }
 
-    public function kerjasamapengabdian(){
-        
+    public function kerjasamapengabdian()
+    {
+
         $users = Auth::user();
         return view('Operator.Kerjasama.kerjasama-pengabdian', compact('users'));
     }
-//data mahasiswa
-    public function kualitasinputmahasiswa(){
-        
+    //data mahasiswa
+    public function kualitasinputmahasiswa()
+    {
+
         $users = Auth::user();
         return view('Operator.Mahasiswa.kualitas-input-mahasiswa', compact('users'));
     }
 
-    public function mahasiswaasing(){
-        
+    public function mahasiswaasing()
+    {
+
         $users = Auth::user();
         return view('Operator.Mahasiswa.mahasiswa-asing', compact('users'));
     }
-//data sdm
-    public function sdmewmpdtps(){
-        
+    //data sdm
+    public function sdmewmpdtps()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.EWMP-DTPS', compact('users'));
     }
 
-    public function profildosen(){
-        
+    public function profildosen()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.profil-dosen', compact('users'));
     }
 
-    public function dosenpembimbing(){
-        
+    public function dosenpembimbing()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.dosen-pembimbing', compact('users'));
     }
 
-    public function dosentidaktetap(){
-        
+    public function dosentidaktetap()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.dosen-tidaktetap', compact('users'));
     }
 
-    public function rekognisi(){
-        
+    public function rekognisi()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.rekognisi', compact('users'));
     }
 
-    public function sdmpenelitian(){
-        
+    public function sdmpenelitian()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.penelitian', compact('users'));
     }
 
-    public function sdmpublikasi(){
-        
+    public function sdmpublikasi()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.publikasi', compact('users'));
     }
 
-    public function sitasi(){
-        
+    public function sitasi()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.sitasi', compact('users'));
     }
 
-    public function paten(){
-        
+    public function paten()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.paten', compact('users'));
     }
 
-    public function hki(){
-        
+    public function hki()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.hki', compact('users'));
     }
 
-    public function teknologitepatguna(){
-        
+    public function teknologitepatguna()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.teknologi-tepat-guna', compact('users'));
     }
 
-    public function bookchapter(){
-        
+    public function bookchapter()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.book-chapter', compact('users'));
     }
 
-    public function sdmpkm(){
-        
+    public function sdmpkm()
+    {
+
         $users = Auth::user();
         return view('Operator.SDM.sdm-pkm', compact('users'));
     }
-//data keuangan sarpras
-    public function keuangan(){
+    //data keuangan sarpras
+    public function keuangan()
+    {
         $users = Auth::user();
         return view('Operator.KeuanganSarpras.keuangan', compact('users'));
     }
-//data pendidikan
-    public function kepuasanmahasiswa(){
+    //data pendidikan
+    public function kepuasanmahasiswa()
+    {
         $users = Auth::user();
         return view('Operator.Pendidikan.kepuasan-mahasiswa', compact('users'));
     }
 
-    public function kurikulum(){
+    public function kurikulum()
+    {
         $users = Auth::user();
         return view('Operator.Pendidikan.kurikulum', compact('users'));
     }
 
-    public function integrasi(){
+    public function integrasi()
+    {
         $users = Auth::user();
         return view('Operator.Pendidikan.integrasi', compact('users'));
     }
-//data penelitian
-    public function penelitian(){
+    //data penelitian
+    public function penelitian()
+    {
         $users = Auth::user();
         return view('Operator.Penelitian.penelitian', compact('users'));
     }
-//data luaran tridharma
-    public function prestasiakademikmhs(){
+    //data luaran tridharma
+    public function prestasiakademikmhs()
+    {
         $users = Auth::user();
         return view('Operator.LuaranTridharma.prestasi-akademik-mhs', compact('users'));
     }
 
-    public function ipklulusan(){
+    public function ipklulusan()
+    {
         $users = Auth::user();
         return view('Operator.LuaranTridharma.ipk-lulusan', compact('users'));
     }
 
-    public function prestasinonakademikmhs(){
+    public function prestasinonakademikmhs()
+    {
         $users = Auth::user();
         return view('Operator.LuaranTridharma.prestasi-nonakademik-mhs', compact('users'));
     }
 
-    public function lulusan(){
+    public function lulusan()
+    {
         $users = Auth::user();
         return view('Operator.LuaranTridharma.lulusan', compact('users'));
     }
-//data PKM
-    public function pengabdian(){
+    //data PKM
+    public function pengabdian()
+    {
         $users = Auth::user();
         return view('Operator.PKM.pengabdian', compact('users'));
     }
 
-//operator-manajemen
-    public function cekvalidasiLKPS(){
+    //operator-manajemen
+    public function cekvalidasiLKPS()
+    {
         $users = Auth::user();
         return view('Operator.cek-validasi-LKPS', compact('users'));
     }
