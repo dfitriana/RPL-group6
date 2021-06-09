@@ -38,6 +38,7 @@ Route::get('/operator-home-keuangansarpras',[OperatorController::class,'keuangan
 Route::get('/operator-home-pendidikan',[OperatorController::class,'pendidikan'])->name('home-pendidikan');
 Route::get('/operator-home-penelitian',[OperatorController::class,'penelitianhome'])->name('home-penelitian');
 Route::get('/operator-home-pkm',[OperatorController::class,'pkm'])->name('home-pkm');
+Route::get('/operator-home-luaran',[OperatorController::class,'luaran'])->name('home-luaran');
 //operator-dashboard-profil pengusul
 Route::get('/operator-profilPengusul', [OperatorController::class, 'profilpengusul'])->name('profil-pengusul');
 Route::get('/operator-editProfilPengusul', [OperatorController::class, 'editprofilpengusul'])->name('edit-profil-pengusul');
