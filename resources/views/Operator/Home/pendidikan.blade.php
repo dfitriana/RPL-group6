@@ -98,7 +98,7 @@
                                             <a class="nav-link" href="{{route('home-pkm')}}" id="scnd">PKM</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Luaran & Capaian Tridharma</a>
+                                            <a class="nav-link" href="{{route('home-luaran')}}" id="scnd">Luaran & Capaian Tridharma</a>
                                           </li>
                                         </ul>
                                     </div>
