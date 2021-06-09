@@ -85,7 +85,7 @@
                                             <a class="nav-link" href="{{route('home-mahasiswa')}}" id="scnd">Mahasiswa</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">SDM</a>
+                                            <a class="nav-link" href="{{route('home-sdm')}}" id="scnd">SDM</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">Keuangan Sarpras</a>
