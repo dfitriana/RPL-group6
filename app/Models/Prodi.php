@@ -10,14 +10,14 @@ class Prodi extends Model
     use HasFactory;
     protected $table = 'prodis';
     // protected $primaryKey = 'kode';
-    protected $fillable = [
-        'kode',
-        'nama_prodi',
-        'jenjang',
-        'konsentrasi',
-        'strjjg',
-        'no_sk',
-        'akreditasi',
-        'tgl_sk'
-    ];
+    // protected $fillable = [
+    //     'kode',
+    //     'nama_prodi',
+    //     'jenjang',
+    //     'konsentrasi',
+    //     'strjjg',
+    //     'no_sk',
+    //     'akreditasi',
+    //     'tgl_sk'
+    // ];
 }

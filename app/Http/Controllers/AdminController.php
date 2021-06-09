@@ -37,13 +37,13 @@ class AdminController extends Controller
             DB::table('prodis')
                 ->updateOrInsert(
                     ['kode' => $data['kode']],
-                    ['nama_prodi' => $data['nama']],
-                    ['jenjang' => $data['jenjang']],
-                    ['konsentrasi' => $data['konsentrasi']],
-                    ['strjjg' => $data['strjjg']],
-                    ['no_sk' => $data['no_sk']],
-                    ['akreditasi' => $data['akreditasi']],
-                    ['tgl_sk' => $data['tgl_sk']]
+                    ['nama_prodi' => $data['nama'],
+                    'jenjang' => $data['jenjang'],
+                    'konsentrasi' => $data['konsentrasi'],
+                    'strjjg' => $data['strjjg'],
+                    'no_sk' => $data['no_sk'],
+                    'akreditasi' => $data['akreditasi'],
+                    'tgl_sk' => $data['tgl_sk']]
 
                 );
         }
