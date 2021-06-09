@@ -89,13 +89,13 @@
                                             <a class="nav-link active" href="{{route('home-keuangan')}}">Keuangan Sarpras</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Pendidikan</a>
+                                            <a class="nav-link" href="{{route('home-pendidikan')}}" id="scnd">Pendidikan</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Penelitian</a>
+                                            <a class="nav-link" href="{{route('home-penelitian')}}" id="scnd">Penelitian</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">PKM</a>
+                                            <a class="nav-link" href="{{route('home-pkm')}}" id="scnd">PKM</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">Luaran & Capaian Tridharma</a>

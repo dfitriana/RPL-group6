@@ -96,7 +96,7 @@
                                             <a class="nav-link" href="{{route('home-penelitian')}}" id="scnd">Penelitian</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">PKM</a>
+                                            <a class="nav-link" href="{{route('home-pkm')}}" id="scnd">PKM</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">Luaran & Capaian Tridharma</a>
