@@ -23,6 +23,8 @@ class CreateDataDosensTable extends Migration
             $table->string('mail_unnes')->nullable();
             $table->string('bidang_ilmu')->nullable();
             $table->integer('prodi_jabatan')->nullable();
+            $table->date('created_at');
+            $table->date('updated_at');
         });
     }
 
