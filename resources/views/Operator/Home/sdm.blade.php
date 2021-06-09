@@ -1,6 +1,6 @@
 @extends('layout.operator')
 @extends('layout.navbar')
-@section('title','Home - Operator:SDM | SIAPS FMIPA')
+@section('title','Home - Operator: SDM | SIAPS FMIPA')
 @section('content')
 <div id="content" class="container-fluid p-6">
             <div class="container-fluid px-lg-4">
@@ -85,7 +85,7 @@
                                             <a class="nav-link active" href="{{route('home-sdm')}}">SDM</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Keuangan Sarpras</a>
+                                            <a class="nav-link" href="{{route('home-keuangan')}}" id="scnd">Keuangan Sarpras</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">Pendidikan</a>
