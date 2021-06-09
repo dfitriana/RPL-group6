@@ -88,10 +88,10 @@
                                             <a class="nav-link" href="{{route('home-keuangan')}}" id="scnd">Keuangan Sarpras</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Pendidikan</a>
+                                            <a class="nav-link" href="{{route('home-pendidikan')}}" id="scnd">Pendidikan</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Penelitian</a>
+                                            <a class="nav-link" href="{{route('home-penelitian')}}" id="scnd">Penelitian</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">PKM</a>

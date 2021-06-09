@@ -77,22 +77,22 @@
                                     <div class="card-header text-center" style="background-color: white;">
                                         <ul class="nav nav-tabs card-header-tabs">
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Kerjasama</a>
+                                            <a class="nav-link" href="{{route('operator-home')}}" id="scnd">Kerjasama</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Mahasiswa</a>
+                                            <a class="nav-link" href="{{route('home-mahasiswa')}}" id="scnd">Mahasiswa</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">SDM</a>
+                                            <a class="nav-link" href="{{route('home-sdm')}}" id="scnd">SDM</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Keuangan Sarpras</a>
+                                            <a class="nav-link" href="{{route('home-keuangan')}}" id="scnd">Keuangan Sarpras</a>
                                           </li>
                                           <li class="nav-item" id="isian">
-                                            <a class="nav-link active" href="#">Pendidikan</a>
+                                            <a class="nav-link active" href="{{route('home-pendidikan')}}">Pendidikan</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" href="#" id="scnd">Penelitian</a>
+                                            <a class="nav-link" href="{{route('home-penelitian')}}" id="scnd">Penelitian</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="#" id="scnd">PKM</a>
