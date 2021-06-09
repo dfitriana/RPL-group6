@@ -25,6 +25,12 @@ class OperatorController extends Controller
         $users = Auth::User();
         return view('Operator.Home.mahasiswa', compact('users'));
     }
+
+    public function sdm()
+    {
+        $users = Auth::User();
+        return view('Operator.Home.sdm', compact('users'));
+    }
     //dashboard-pengusul
     public function profilpengusul()
     {
