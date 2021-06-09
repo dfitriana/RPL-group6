@@ -33,6 +33,7 @@ Route::post('/plotting-evaluator-save/{idperiode}', [AdminController::class, 'sa
 Route::get('/operator-dashboard', [OperatorController::class, 'operator'])->name('operator-home');
 //operator-dashboard-home
 Route::get('/operator-home-mahasiswa',[OperatorController::class,'mahasiswa'])->name('home-mahasiswa');
+Route::get('/operator-home-sdm',[OperatorController::class,'sdm'])->name('home-sdm');
 //operator-dashboard-profil pengusul
 Route::get('/operator-profilPengusul', [OperatorController::class, 'profilpengusul'])->name('profil-pengusul');
 Route::get('/operator-editProfilPengusul', [OperatorController::class, 'editprofilpengusul'])->name('edit-profil-pengusul');
