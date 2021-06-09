@@ -49,6 +49,12 @@ class OperatorController extends Controller
         $users = Auth::User();
         return view('Operator.Home.penelitian', compact('users'));
     }
+
+    public function pkm()
+    {
+        $users = Auth::User();
+        return view('Operator.Home.pkm', compact('users'));
+    }
     //dashboard-pengusul
     public function profilpengusul()
     {
