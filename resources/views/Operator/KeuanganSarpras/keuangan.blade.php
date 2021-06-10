@@ -17,7 +17,7 @@
                     </div>
 
                     <!-- kolom -->
-                    <div class="col-md-12 mt-3">
+                    <div class="col-md-10 mt-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card text-center">

@@ -16,7 +16,7 @@
                     </div>
 
                     <!-- kolom -->
-                    <div class="col-md-12 mt-3">
+                    <div class="col-md-10 mt-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card text-center">
@@ -55,8 +55,8 @@
                                     </form>
                                 </nav>
 
-                                <table class="table v-middle">
-                                    <div class="table-responsive-xl">
+                                <div class="view">
+                                    <div class="table-responsive-xl wrapper">
                                         <table class="table table-borderless table-hover">
                                             <thead>
                                                 <tr>
@@ -1244,7 +1244,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                </table>
+                                </div>
                             </div>
                         </div>
                     </div>
