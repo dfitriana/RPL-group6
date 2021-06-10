@@ -122,6 +122,43 @@ table.dataTable thead .sorting_desc_disable:after,
 table.dataTable thead .sorting_desc_disable:before {
     bottom: .5em;
 }
+
+
+/* .scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+} */
+
+.view {
+    margin: auto;
+}
+  
+.wrapper {
+    position: relative;
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+.sticky-col {
+    position: sticky;
+    position: -webkit-sticky;    
+    background-color: white;
+}
+  
+.first-col {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    left: 0px;    
+}
+  
+.second-col {
+    width: 100%;
+    min-width: 0%;
+    max-width: 100%;
+    left: 100px;    
+}
   
 @media (min-width: 768px) {
     #sidebar-container {

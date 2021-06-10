@@ -87,13 +87,13 @@
                                     </form>
                                 </nav>
 
-                                <table class="table v-middle">
-                                    <div class="table-responsive-sm">
+                                <div class="view">
+                                    <div class="table-responsive-sm wrapper">
                                         <table class="table table-borderless table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" rowspan="2">No.</th>
-                                                    <th scope="col" rowspan="2">Nama Dosen</th>
+                                                    <th scope="col" rowspan="2" class="sticky-col first-col">No.</th>
+                                                    <th scope="col" rowspan="2" class="sticky-col second-col">Nama Dosen</th>
                                                     <th scope="col" rowspan="2">NIDN/NIDK</th>
                                                     <th scope="col" colspan="2" class="text-center">Pendidikan Pascasarjana</th>
                                                     <th scope="col" rowspan="2">Bidang Keahlian</th>
@@ -111,8 +111,8 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>1</td>
-                                                    <td>Dr. Alamsyah, S. Si., M. Kom.</td>
+                                                    <td class="sticky-col first-col">1</td>
+                                                    <td class="sticky-col second-col">Dr. Alamsyah, S. Si., M. Kom.</td>
                                                     <td>40947</td>
                                                     <td class="text-center" colspan="2">S3</td>
                                                     <td>Kriptografi</td>
@@ -125,8 +125,8 @@
                                                     <td>Forensika Digital, Interaksi Manusia dan Komputer, Kewirausahaan, Logika Informatika,Metodologi Penelitian, Pengajaran, Berbantuan Komputer, Praktikum Pengajaran, Berbantuan Komputer, Praktikum Rekayasa Perangkat Lunak, Rekayasa Perangkat Lunak, & Riset Teknologi Informasi</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>2</td>
-                                                    <td>Endang Sugiharti, S. Si., M. Kom.</td>
+                                                    <td class="sticky-col first-col">2</td>
+                                                    <td class="sticky-col second-col">Endang Sugiharti, S. Si., M. Kom.</td>
                                                     <td>40757</td>
                                                     <td class="text-center" colspan="2">S2</td>
                                                     <td>Pemrograman Komputer</td>
@@ -145,8 +145,8 @@
                                                     <td>Forensika Digital, Interaksi Manusia dan Komputer, Kewirausahaan, Logika Informatika,Metodologi Penelitian, Pengajaran, Berbantuan Komputer, Praktikum Pengajaran, Berbantuan Komputer, Praktikum Rekayasa Perangkat Lunak, Rekayasa Perangkat Lunak, & Riset Teknologi Informasi</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>3</td>
-                                                    <td>Riza Arifudin, S. Pd., M. Cs.</td>
+                                                    <td class="sticky-col first-col">3</td>
+                                                    <td class="sticky-col second-col">Riza Arifudin, S. Pd., M. Cs.</td>
                                                     <td>40910</td>
                                                     <td class="text-center" colspan="2">S2</td>
                                                     <td>Pemrograman Komputer</td>
@@ -170,8 +170,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4</td>
-                                                    <td>Much. Aziz Muslim, S. Kom., M. Kom.</td>
+                                                    <td class="sticky-col first-col">4</td>
+                                                    <td class="sticky-col second-col">Much. Aziz Muslim, S. Kom., M. Kom.</td>
                                                     <td>41021</td>
                                                     <td class="text-center" colspan="2">S2</td>
                                                     <td>Ilmu Komputer</td>
@@ -191,8 +191,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>5</td>
-                                                    <td>Zaenal Abidin, S. Si., M. Cs., Ph.D.</td>
+                                                    <td class="sticky-col first-col">5</td>
+                                                    <td class="sticky-col second-col">Zaenal Abidin, S. Si., M. Cs., Ph.D.</td>
                                                     <td>40931</td>
                                                     <td class="text-center" colspan="2">S3</td>
                                                     <td>Riset Sistem Informasi</td>
@@ -221,8 +221,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>5</td>
-                                                    <td>Dr. Djuniadi, M. T.</td>
+                                                    <td class="sticky-col first-col">6</td>
+                                                    <td class="sticky-col second-col">Dr. Djuniadi, M. T.</td>
                                                     <td>40569</td>
                                                     <td class="text-center" colspan="2">S3</td>
                                                     <td>Komputer</td>
@@ -243,8 +243,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>6</td>
-                                                    <td>Dr. Feddy Setio Pribadi S.Pd., MT.</td>
+                                                    <td class="sticky-col first-col">7</td>
+                                                    <td class="sticky-col second-col">Dr. Feddy Setio Pribadi S.Pd., MT.</td>
                                                     <td>40814</td>
                                                     <td class="text-center" colspan="2">S3</td>
                                                     <td>Pemrograman Komputer</td>
@@ -265,7 +265,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                </table>
+                                </div>
                             </div>
                         </div>
                     </div>
