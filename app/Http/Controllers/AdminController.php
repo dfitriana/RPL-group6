@@ -36,14 +36,14 @@ class AdminController extends Controller
         foreach ($programData as $data) {
             DB::table('prodis')
                 ->updateOrInsert(
-                    ['kode' => $data['kode']],
-                    ['nama_prodi' => $data['nama'],
-                    'jenjang' => $data['jenjang'],
-                    'konsentrasi' => $data['konsentrasi'],
-                    'strjjg' => $data['strjjg'],
-                    'no_sk' => $data['no_sk'],
-                    'akreditasi' => $data['akreditasi'],
-                    'tgl_sk' => $data['tgl_sk']]
+                    ['kode'         => $data['kode']],
+                    ['nama_prodi'   => $data['nama'],
+                    'jenjang'       => $data['jenjang'],
+                    'konsentrasi'   => $data['konsentrasi'],
+                    'strjjg'        => $data['strjjg'],
+                    'no_sk'         => $data['no_sk'],
+                    'akreditasi'    => $data['akreditasi'],
+                    'tgl_sk'        => $data['tgl_sk']]
 
                 );
         }
@@ -54,12 +54,14 @@ class AdminController extends Controller
     public function setperiode(Request $request, $kode_periode)
     {
         $idperiode = $kode_periode;
+        $prodi = Prodi::where('kode',$request->program_studi)->value('nama_prodi');
 
         $periode = new Periode;
-        $periode->kode_periode = $idperiode;
-        $periode->program_studi = $request->program_studi;
-        $periode->tgl_awal = $request->tglawal;
-        $periode->tgl_akhir = $request->tglakhir;
+        $periode->kode_periode      = $idperiode;
+        $periode->kode_prodi        = $request->program_studi;
+        $periode->program_studi     = $prodi;
+        $periode->tgl_awal          = $request->tglawal;
+        $periode->tgl_akhir         = $request->tglakhir;
         $periode->save();
         return redirect()->route('plotting', $idperiode);
     }
@@ -72,14 +74,14 @@ class AdminController extends Controller
         foreach ($evaluatorData as $data) {
             DB::table('Data_dosens')
                 ->updateOrInsert(
-                    ['nip' => $data['nip']],
-                    ['nama' => $data['nama'],
-                    'email' => $data['email'],
-                    'jabatan_id' => $data['jabatan_id'],
-                    'kode_unit' => $data['kode_unit'],
-                    'prodi_doskar' => $data['prodi_doskar'],
-                    'mail_unnes' => $data['mail_unnes'],
-                    'bidang_ilmu' => $data['bidang_ilmu'],
+                    ['nip'          => $data['nip']],
+                    ['nama'         => $data['nama'],
+                    'email'         => $data['email'],
+                    'jabatan_id'    => $data['jabatan_id'],
+                    'kode_unit'     => $data['kode_unit'],
+                    'prodi_doskar'  => $data['prodi_doskar'],
+                    'mail_unnes'    => $data['mail_unnes'],
+                    'bidang_ilmu'   => $data['bidang_ilmu'],
                     'prodi_jabatan' => $data['prodi_jabatan']]
                 );
         }
@@ -92,15 +94,22 @@ class AdminController extends Controller
 
     public function savedata(Request $request, $idperiode)
     {
+        $evas    = $request->evaluator;
         $periode = Periode::find($idperiode);
-        $users = User::whereIn('nip', [$request->evaluator_1, $request->evaluator_2, $request->evaluator_3])
-            ->get();
-            $akred = new Evaluator;
-
-            $akred->evaluator_1 = $request->evaluator_1;
-            $akred->evaluator_2 = $request->evaluator_2;
-            $akred->evaluator_3 = $request->evaluator_3;
-            $akred->save();
+        for ($i=0; $i < count($evas); $i++) {
+            $users[] = User::whereIn('nip', [$evas[$i]])
+                ->get();
+        }
+            for ($i=0; $i < count($evas); $i++) { 
+                $dosen[]    = Data_dosen::whereIn('nip',[$evas[$i]])->value('nama');
+                $data = [
+                    'kode_periode'  => $idperiode,
+                    'id_evaluator'  => $i+1,
+                    'nip'           => $evas[$i],
+                    'nama_dosen'    => $dosen[$i]
+                ];
+                DB::table('plottings')->insert($data);
+            }
 
             foreach($users as $user){
                 Notification::send($user, new PenugasanEvaluator($periode));
