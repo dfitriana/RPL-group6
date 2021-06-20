@@ -19,9 +19,9 @@
                 </div>
                 <div class="mb-3">
                     <strong for="program-studi" class="form-label">Program Studi</strong>
-                    <select class="form-control" name="program_studi"">
+                    <select class="form-control" name="program_studi">
                     @foreach($prodi as $items)
-                        <option value=" {{$items->nama_prodi}}">{{$items->kode}} {{$items->nama_prodi}}</option>
+                        <option value=" {{$items->kode}}">{{$items->nama_prodi}} ({{$items->akreditasi}})</option>
                         @endforeach
                     </select>
                 </div>
