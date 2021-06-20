@@ -22,6 +22,7 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="d-flex" id="content-wrapper">
         <!-- Sidebar -->
@@ -35,8 +36,8 @@
                         @yield('sidebar-header')
                     </li>
 
-                    <li class="has-sub"> 
-                        <a class="nav-link collapsed text-left" href="#collapseExample2" role="button" data-toggle="collapse" >
+                    <li class="has-sub">
+                        <a class="nav-link collapsed text-left" href="#collapseExample2" role="button" data-toggle="collapse">
                             <i class="flaticon-user ion-md-apps lead mr-2" style="color: white;"></i>Dashboard
                         </a>
                         <div class="collapse menu mega-dropdown" id="collapseExample2">
@@ -44,10 +45,10 @@
                                 <div class="container-fluid ">
                                     <div class="row">
                                         <div class="col-lg-12 px-2">
-                                            <div class="submenu-box"> 
+                                            <div class="submenu-box">
                                                 <ul class="list-unstyled m-0">
-                                                    <li><a href="">Home</a></li>
-                                                    <li><a href="">Penugasan</a></li>
+                                                    <li><a href="{{route('eva-home')}}">Home</a></li>
+                                                    <li><a href="{{route('eva-penugasan')}}">Penugasan <span class="badge rounded-pill bg-danger">{{$users->notifications->count()}}</span></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -58,8 +59,8 @@
                     </li>
 
                     <!-- DIMULAI DARI SINI YA -->
-                    <li class="has-sub"> 
-                        <a class="nav-link collapsed text-left" href="#collapseExample3" role="button" data-toggle="collapse" >
+                    <li class="has-sub">
+                        <a class="nav-link collapsed text-left" href="#collapseExample3" role="button" data-toggle="collapse">
                             <i class="flaticon-user ion-md-calendar lead mr-2" style="color: white;"></i>Data Akreditasi
                         </a>
                         <div class="collapse menu mega-dropdown" id="collapseExample3">
@@ -67,7 +68,7 @@
                                 <div class="container-fluid ">
                                     <div class="row">
                                         <div class="col-lg-12 px-2">
-                                            <div class="submenu-box"> 
+                                            <div class="submenu-box">
                                                 <ul class="list-unstyled m-0">
                                                     <li><a href="">Isi Data Akreditasi 1</a></li>
                                                     <li><a href="">Isi Data Akreditasi 2</a></li>
@@ -81,16 +82,16 @@
                         </div>
                     </li>
 
-                    <li class="has-sub"> 
-                        <a class="nav-link collapsed text-left" href="#collapseExample4" role="button" data-toggle="collapse" >
-                            <i class="flaticon-user ion-md-settings lead mr-2" style="color: white;"></i>   Manajemen
+                    <li class="has-sub">
+                        <a class="nav-link collapsed text-left" href="#collapseExample4" role="button" data-toggle="collapse">
+                            <i class="flaticon-user ion-md-settings lead mr-2" style="color: white;"></i> Manajemen
                         </a>
                         <div class="collapse menu mega-dropdown" id="collapseExample4">
                             <div class="dropmenu" aria-labelledby="navbarDropdown">
                                 <div class="container-fluid ">
                                     <div class="row">
                                         <div class="col-lg-12 px-2">
-                                            <div class="submenu-box"> 
+                                            <div class="submenu-box">
                                                 <ul class="list-unstyled m-0">
                                                     <li><a href="">Isi Manajemen 1</a></li>
                                                     <li><a href="">Isi Manajemen 2</a></li>
@@ -115,17 +116,17 @@
         </div>
     </div>
 
-  <!-- Bootstrap y JQuery -->
+    <!-- Bootstrap y JQuery -->
     <script src="{{asset('assets/js/jquery-3.5.1.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/toastr.min.js')}}"></script>
 
-  <!-- Abrir / cerrar menu -->
+    <!-- Abrir / cerrar menu -->
     <script>
-        $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#content-wrapper").toggleClass("toggled");
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#content-wrapper").toggleClass("toggled");
         });
     </script>
 
