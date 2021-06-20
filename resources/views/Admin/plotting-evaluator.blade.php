@@ -28,7 +28,7 @@
 
                 <div class="mb-3">
                     <strong for="evaluator_1" class="form-label">Evaluator Internal 1</strong>
-                    <select class="form-control" name="evaluator_1">
+                    <select class="form-control" name="evaluator[]">
                         @foreach($evaluator as $eva)
                         <option value="{{$eva->nip}}">{{$eva->nama}}</option>
                         @endforeach
@@ -37,7 +37,7 @@
 
                 <div class="mb-3">
                     <strong for="evaluator_2" class="form-label">Evaluator Internal 1</strong>
-                    <select class="form-control" name="evaluator_2">
+                    <select class="form-control" name="evaluator[]">
                         @foreach($evaluator as $eva)
                         <option value="{{$eva->nip}}">{{$eva->nama}}</option>
                         @endforeach
@@ -46,7 +46,7 @@
 
                 <div class="mb-3">
                     <strong for="evaluator_3" class="form-label">Evaluator Internal 1</strong>
-                    <select class="form-control" name="evaluator_3">
+                    <select class="form-control" name="evaluator[]">
                         @foreach($evaluator as $eva)
                         <option value="{{$eva->nip}}">{{$eva->nama}}</option>
                         @endforeach
