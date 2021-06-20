@@ -30,7 +30,7 @@ class PenugasanEvaluator extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['mail', 'database'];
     }
 
     /**
@@ -42,9 +42,9 @@ class PenugasanEvaluator extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('Anda dipilih untuk menjadi evaluator '.$this->periode['program_studi'])
-                    ->action('Konfirmasi', url('/'))
-                    ->line('Terimakasih atas perhatiannya!');
+            ->line('Anda dipilih untuk menjadi evaluator ' . $this->periode['program_studi'])
+            ->action('Konfirmasi', url('/'))
+            ->line('Terimakasih atas perhatiannya!');
     }
 
     /**
@@ -56,7 +56,7 @@ class PenugasanEvaluator extends Notification
     public function toArray($notifiable)
     {
         return [
-            //
+            'data' => $this->periode
         ];
     }
 }
