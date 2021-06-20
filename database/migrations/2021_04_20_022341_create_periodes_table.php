@@ -15,6 +15,7 @@ class CreatePeriodesTable extends Migration
     {
         Schema::create('periodes', function (Blueprint $table) {
             $table->string('kode_periode', 20)->primary();
+            $table->integer('kode_prodi');
             $table->string('program_studi', 50);
             $table->increments('evaluator_id')->references('id')->on('evaluators');
             $table->index('evaluator_id');
