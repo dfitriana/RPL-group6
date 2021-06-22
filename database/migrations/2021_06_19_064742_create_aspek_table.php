@@ -15,8 +15,7 @@ class CreateAspekTable extends Migration
     {
         Schema::create('aspek', function (Blueprint $table) {
             $table->id();
-            $table->integer('indikator_id')->references('id')->on('indikator');
-            $table->integer('isian_indikator_id')->references('id')->on('isian_indikator');
+            $table->foreignId('indikator_id')->references('id')->on('indikator');
             $table->string('nama_aspek');
             $table->timestamps();
         });

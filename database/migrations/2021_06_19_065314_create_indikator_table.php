@@ -15,8 +15,7 @@ class CreateIndikatorTable extends Migration
     {
         Schema::create('indikator', function (Blueprint $table) {
             $table->id();
-            $table->integer('data_dosens_nip')->references('nip')->on('data_dosens');
-            $table->integer('isian_indikator_id')->references('id')->on('isian_indikator');
+            $table->foreignId('data_dosens_nip')->references('nip')->on('data_dosens');
             $table->string('nama_indikator');
             $table->timestamps();
         });
