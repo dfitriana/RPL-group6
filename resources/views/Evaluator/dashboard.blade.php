@@ -4,7 +4,7 @@
 
 <!-- <div id="content" class="container-fluid p-6"> -->
 <br>
-@foreach($users->notifications as $notif)
+@foreach($users->unreadnotifications as $notif)
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>Perhatian!</strong> Anda mendapatkan tugas sebagai Evaluator Akreditasi Program Studi di {{$notif->data['data']['program_studi']}}
     <a href="{{route('eva-detail',$notif->id)}}" type="button" class="btn btn-light">Klik untuk lebih lanjut</a>
