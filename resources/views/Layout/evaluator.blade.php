@@ -48,7 +48,9 @@
                                             <div class="submenu-box">
                                                 <ul class="list-unstyled m-0">
                                                     <li><a href="{{route('eva-home')}}">Home</a></li>
-                                                    <li><a href="{{route('eva-penugasan')}}">Penugasan <span class="badge rounded-pill bg-danger">{{$users->notifications->count()}}</span></a></li>
+                                                    <li><a href="{{route('eva-penugasan')}}">Penugasan @if($users->unreadnotifications->count())
+                                                            <span class="badge rounded-pill bg-danger">{{$users->unreadnotifications->count()}}</span>
+                                                            @endif</a></li>
                                                 </ul>
                                             </div>
                                         </div>
