@@ -85,3 +85,5 @@ Route::get('/operator-cekvalidasi', [OperatorController::class, 'cekvalidasiLKPS
 Route::get('/evaluator-dashboard', [EvaluatorController::class, 'evaluator'])->name('eva-home');
 Route::get('/evaluator-penugasan', [EvaluatorController::class, 'penugasan'])->name('eva-penugasan');
 Route::get('/evaluator-penugasan/{id}', [EvaluatorController::class, 'detail'])->name('eva-detail');
+Route::get('/evaluator-setuju/{id}',[EvaluatorController::class,'setuju'])->name('eva-setuju');
+Route::post('/evaluator-tolak/{id}',[EvaluatorController::class,'tolak'])->name('eva-tolak');
