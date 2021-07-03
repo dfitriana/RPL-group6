@@ -8,5 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Notification extends Model
 {
     use HasFactory;
-    protected $casts = ['data' => 'array'];
+    protected $casts = [
+        'id'   => 'string',
+        'data' => 'array'
+    ];
 }
