@@ -15,7 +15,7 @@ class PkmPengabdian extends Seeder
      */
     public function run()
     {
-        
+        DB::table('pkm_pengabdian')->truncate();
         DB::table('pkm_pengabdian')->insert([
             [
                 'nama_dosen' => 'Riza Arifudin',

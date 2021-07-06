@@ -15,6 +15,7 @@ class PenelitianPenelitian extends Seeder
      */
     public function run()
     {
+        DB::table('penelitian_penelitian')->truncate();
         DB::table('penelitian_penelitian')->insert([
             [
                 'nama_dosen' => 'Much Aziz Muslim',

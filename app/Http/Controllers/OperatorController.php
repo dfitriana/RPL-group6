@@ -87,7 +87,8 @@ class OperatorController extends Controller
     {
 
         $users = Auth::user();
-        return view('Operator.Kerjasama.kerjasama-penelitian', compact('users'));
+        $data = DB::table('kerjasama_penelitians')->get();
+        return view('Operator.Kerjasama.kerjasama-penelitian', compact('users', 'data'));
     }
 
     public function kerjasamapengabdian()
